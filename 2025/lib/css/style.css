@@ -220,7 +220,7 @@ table div {
 }
 
 #content ul li {
-  list-style-type: none;
+  /* list-style-type: none; */
   list-style-image: url(../resources/bullet.png);
   padding: 0 0 0px 0px;
   line-height: 1.5em;
