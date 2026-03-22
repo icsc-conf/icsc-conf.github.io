@@ -1,22 +1,18 @@
 export const tracks = [
-  "Human-Centered AI and Society",
-  "Computational Social Science",
-  "Trust, Safety, and Platform Governance",
-  "Responsible Data and Ethical Methods"
+  "Digital and Computational Demography",
+  "Social applications of Large Language Models",
+  "Large-scale social media analytics and intelligence",
+  "Digital Inclusion in the Global South",
+  "Human-computer interaction across various domains",
+  "Applied social computing applications in diverse areas such as health and finance"
 ];
 
 export const deadlines = [
-  { label: "Abstract Submission", date: "May 10, 2026" },
-  { label: "Paper Submission", date: "May 17, 2026" },
-  { label: "Notification", date: "July 20, 2026" },
-  { label: "Camera Ready", date: "August 18, 2026" }
-];
-
-export const posterDeadlines = [
-  { label: "Poster Submission", date: "July 25, 2026" },
-  { label: "Poster Notification", date: "August 10, 2026" },
-  { label: "Extended Abstract", date: "August 18, 2026" },
-  { label: "Conference", date: "September 4-5, 2026" }
+  { label: "Paper Submission", date: "23:59 GMT on May 25th, 2026" },
+  { label: "Notification", date: "June 15th, 2026" },
+  { label: "Camera Ready", date: "August 17th, 2026" },
+  { label: "Pre-Confernece Workshop", date: "September 3rd, 2026" },
+  { label: "Confernece", date: "September 4th-5th, 2026" }
 ];
 
 export const researchTopics = [
@@ -53,22 +49,23 @@ export const quickActions = [
     text: "Review the paper submission scope, guidelines, and dates."
   },
   {
-    href: "poster.html",
-    title: "Call for Posters",
-    text: "See poster track requirements, timeline, and submission details."
+    href: "oc.html",
+    title: "Committee",
+    text: "See the organizing and program committee for ICSC 2026."
   },
   {
-    href: "#dates",
-    title: "Deadlines",
-    text: "Track submission, notification, and camera-ready dates."
+    href: "sponsors.html",
+    title: "Information for Sponsors",
+    text: "View sponsorship information for ICSC 2026."
   }
 ];
 
 export const focusAreas = [
+  "Digital and Computational Demography",
   "Social networks and social behavior in online and offline contexts",
   "Big data analytics informed by social science theory",
+  "Digital inclusion and the Global South",
   "Interdisciplinary collaboration across computational and social domains",
-  "Responsible and policy-relevant social computing applications"
 ];
 
 export const history = [
@@ -214,11 +211,4 @@ export const paperSubmissionGuidelines = [
   "Innovative, early-stage ideas, proofs-of-concept, and preliminary results are welcome.",
   "Submissions must be at most 12 pages in Springer CCIS format.",
   "The first page should include the paper title, abstract, and author affiliation information."
-];
-
-export const posterSubmissionGuidelines = [
-  "Poster layout should be simple, professional, and suitable for in-person presentation.",
-  "Recommended poster size is 60 cm (W) x 90 cm (H).",
-  "An accompanying extended abstract should be no longer than 2 pages in IEEE conference format.",
-  "Submission files should be provided in PDF and prepared in English."
 ];

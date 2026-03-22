@@ -6,8 +6,8 @@ import { renderToStaticMarkup } from "react-dom/server";
 import {
   Conference2026Page,
   ConferenceCallPaperPage,
-  ConferenceCallPosterPage,
   ConferenceCommitteePage,
+  ConferenceSponsorsPage,
   PastConferencesPage,
   RootLandingPage
 } from "../src/site/pages/index";
@@ -153,11 +153,11 @@ const pages: PageSpec[] = [
     render: () => <ConferenceCommitteePage paths={conferencePaths} />
   },
   {
-    outputPath: "2026/poster.html",
-    title: "ICSC 2026 Call For Posters",
-    description: "Poster track information for ICSC 2026.",
+    outputPath: "2026/sponsors.html",
+    title: "ICSC 2026 Information for Sponsors",
+    description: "Sponsorship information for ICSC 2026.",
     cssHref: "../site.css",
-    render: () => <ConferenceCallPosterPage paths={conferencePaths} />
+    render: () => <ConferenceSponsorsPage paths={conferencePaths} />
   }
 ];
 

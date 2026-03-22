@@ -10,7 +10,6 @@ export function ConferenceCommitteePage({ paths }: { paths: SitePaths }) {
         title="ICSC 2026 Committee"
         description="Leadership and committee roles for the International Conference on Social Computing 2026."
         primaryAction={{ href: "call.html", label: "Call For Papers" }}
-        secondaryAction={{ href: "poster.html", label: "Call For Posters", variant: "secondary" }}
         compact
       />
 

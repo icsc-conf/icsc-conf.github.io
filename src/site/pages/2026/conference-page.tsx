@@ -22,7 +22,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             will be held in-person.
           </p>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {quickActions.map((action) => (
               <a
                 key={action.title}

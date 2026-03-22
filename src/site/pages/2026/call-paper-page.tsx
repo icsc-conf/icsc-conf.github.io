@@ -3,44 +3,52 @@ import { ConferenceAnnouncementHero, SiteShell, type SitePaths } from "../../com
 import {
   deadlines,
   paperSubmissionGuidelines,
-  placeholderTpcCoChairs,
-  researchTopics
+  placeholderTpcCoChairs
 } from "../../content";
 
 export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
+  const callTopics = [
+    "Digital and Computational Demography",
+    "Online social network analysis, mining, and modeling",
+    "Large-scale social media analytics and intelligence",
+    "Digital Inclusion in the Global South",
+    "Human-computer interaction across various domains",
+    "Applied social computing applications in diverse areas such as health and finance"
+  ];
+
   return (
     <SiteShell paths={paths}>
       <ConferenceAnnouncementHero
         badge="CALL FOR PAPERS"
         title="ICSC 2026 Call For Papers"
         description="We invite original, unpublished submissions for the in-person conference at Nuffield College, Oxford on September 4-5, 2026."
-        primaryAction={{ href: "poster.html", label: "Call For Posters" }}
-        secondaryAction={{ href: "index.html#dates", label: "Important Dates", variant: "secondary" }}
+        primaryAction={{ href: "index.html#dates", label: "Important Dates" }}
         compact
       />
 
       <main className="mx-auto w-full max-w-7xl px-6 py-16 lg:px-10">
-        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-slate-800 shadow-sm">
-          <p className="text-sm font-semibold tracking-[0.18em] text-amber-800">PLACEHOLDER DETAILS</p>
-          <p className="mt-3 text-sm leading-relaxed">
-            The structure and submission guidance below are adapted from ICSC 2025 and are being used as placeholder
-            content until the final ICSC 2026 CFP is released.
-          </p>
-        </section>
-
         <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Scope and Publication</h2>
           <p className="mt-4 text-slate-700">
             The 6th International Conference on Social Computing (ICSC 2026) convenes researchers, practitioners, and
             policymakers to advance and critically assess the theory, systems engineering, and societal consequences of
-            social computing.
+            social computing. Importantly, it has an optional conference proceedings which will be published by Springer
+            Nature (in the Communications in Computer and Information Science series).
           </p>
           <p className="mt-4 text-slate-700">
             A selection of outstanding papers will be fast-tracked to ACM Transactions on Social Computing or the
-            Journal of Social Computing. The conference proceedings and the above journals are all indexed by Ei
-            Compendex. Best Paper and Best Student Paper awards will be presented at the conference banquet.
+            Journal of Social Computing. The conference proceedings and the above journals are all indexed by all major
+            scholarly services. Best Paper and Best Student Paper awards will be presented at the conference banquet.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
+            <a
+              href="https://link.springer.com/book/9789819598762"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-slate-300 px-3 py-2 font-semibold text-slate-800 hover:border-sky-700 hover:text-sky-700"
+            >
+              Springer Nature
+            </a>
             <a
               href="https://dl.acm.org/journal/tsc"
               target="_blank"
@@ -63,7 +71,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
         <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Topics of Interest</h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-2">
-            {researchTopics.map((topic) => (
+            {callTopics.map((topic) => (
               <li key={topic} className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-700">
                 {topic}
               </li>
@@ -75,15 +83,16 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
           <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
             <h2 className="text-3xl font-semibold tracking-tight">Submission Guidelines</h2>
             <p className="mt-4 text-slate-700">
-              Placeholder submission portal:
+              Submission and review are managed via{" "}
               <a
                 href="https://openreview.net/group?id=icsc-conf.github.io/ICSC/2025/Conference"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 font-semibold text-sky-700 transition hover:text-sky-900"
+                className="font-semibold text-sky-700 transition hover:text-sky-900"
               >
-                OpenReview (2025 placeholder)
+                OpenReview
               </a>
+              .
             </p>
             <ul className="mt-6 space-y-4 text-slate-700">
               {paperSubmissionGuidelines.map((item) => (
