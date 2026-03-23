@@ -204,18 +204,23 @@ export function SiteFooter({ paths }: { paths: SitePaths }) {
               </a>
             </li>
             <li>
+              <a href={`${paths.conferenceHref.replace("index.html", "call.html")}`} className="transition hover:text-cyan-200">
+                Call for Papers
+              </a>
+            </li>
+            <li>
+              <a href={`${paths.conferenceHref.replace("index.html", "oc.html")}`} className="transition hover:text-cyan-200">
+                Committee
+              </a>
+            </li>
+            <li>
+              <a href={`${paths.conferenceHref.replace("index.html", "sponsors.html")}`} className="transition hover:text-cyan-200">
+                Information for Sponsors
+              </a>
+            </li>
+            <li>
               <a href={`${paths.conferenceHref}#programme`} className="transition hover:text-cyan-200">
                 Programme
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref}#venue`} className="transition hover:text-cyan-200">
-                Venue
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref}#venue`} className="transition hover:text-cyan-200">
-                Travel
               </a>
             </li>
           </ul>

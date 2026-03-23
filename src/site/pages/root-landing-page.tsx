@@ -28,7 +28,7 @@ export function RootLandingPage({ paths }: { paths: SitePaths }) {
                 science insight to better understand human behavior, social networks, and societal change.
               </p>
               <p className="mt-4 max-w-4xl text-slate-700">
-                Across legacy conference pages, ICSC consistently positions itself as a venue for collaborative
+                ICSC consistently positions itself as a venue for collaborative
                 research at the intersection of big data analytics and social science mechanisms. The conference
                 evolved from early editions focused on online social behaviour into a broader international social
                 computing forum.
