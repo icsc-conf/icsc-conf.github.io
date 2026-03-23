@@ -148,11 +148,11 @@ export const organizingCommittee = [
   },
   {
     title: "General Co-Chairs",
-    members: ["Charles Rahal, University of Oxford, United Kingdom", "TBD", "TBD"]
+    members: ["Charles Rahal, University of Oxford, United Kingdom", "Daniel Romero, University of Michigan, United States of America", "Adel Daoud, Institute of Analytical Sociology at Linköping University, Sweden"]
   },
   {
     title: "TPC Co-Chairs",
-    members: ["TBD", "TBD"]
+    members: ["Charles Rahal, University of Oxford, United Kingdom", "Daniel Romero, University of Michigan, United States of America", "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China" ]
   },
   {
     title: "Poster Co-Chairs",
@@ -164,7 +164,7 @@ export const organizingCommittee = [
   },
   {
     title: "Financial Chairs",
-    members: ["Yuqi Liang, University of Oxford, United Kingdom", "Xuejie Ding, University of Hong Kong, China", "Ava", "Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
+    members: ["Yuqi Liang, University of Oxford, United Kingdom", "Xuejie Ding, The University of Hong Kong, China", "Ava Keeling, University of Oxford, United Kingdom", "Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
   },
   {
     title: "Registration Chair",
@@ -172,7 +172,7 @@ export const organizingCommittee = [
   },
   {
     title: "Publicity Co-Chairs",
-    members: ["Chenxi", "Adel Daoud, Linköping University, Sweden", "Zerui Tian, University of Oxford, United Kingdom"]
+    members: ["Chenxi", "Adel Daoud, Institute of Analytical Sociology at Linköping University, Sweden", "Zerui Tian, University of Oxford, United Kingdom"]
   },
   {
     title: "Publication Chair",
@@ -180,7 +180,7 @@ export const organizingCommittee = [
   },
   {
     title: "Website Chairs",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China", "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom", "Anda-Raluca Epure, University of Oxford, Unted Kingdom"]
+    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China", "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom", "Anda-Raluca Epure, University of Oxford, United Kingdom"]
   },
   {
     title: "Workshops Chair",
@@ -191,10 +191,10 @@ export const organizingCommittee = [
     members: ["Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
   },
   { title: "Proceedings Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China"]
+    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China"]
   },
   { title: "Liaison Co-Chairs",
-    members: ["Daniel Valdenegro, University of Oxford, United Kingdom", "Jiani Yan, University of Oxford, United Kingdom", "Linda Li, University College London, United Kingdom", "Ava", "Anda-Raluca Epure, University of Oxford, United Kingdom"]
+    members: ["Daniel Valdenegro, University of Oxford, United Kingdom", "Jiani Yan, University of Oxford, United Kingdom", "Linda Li, University College London, United Kingdom", "Ava Keeling, University of Oxford, United Kingdom", "Anda-Raluca Epure, University of Oxford, United Kingdom"]
   }, 
   { title: "Swag Chair",
     members: ["Luyin Zhang, Princeton University, United States"]
