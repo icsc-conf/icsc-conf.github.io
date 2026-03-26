@@ -21,7 +21,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
       <ConferenceAnnouncementHero
         badge="CALL FOR PAPERS"
         title="ICSC 2026 Call For Papers"
-        description="We invite original, unpublished submissions for the in-person conference at Nuffield College, Oxford on September 4-5, 2026."
+        description="We invite original, unpublished submissions for the in-person conference at Nuffield College, Oxford on September 2nd-4th, 2026."
         primaryAction={{ href: "index.html#dates", label: "Important Dates" }}
         compact
       />
@@ -136,7 +136,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
               ))}
               <div className="flex items-center justify-between border-b border-slate-100 pb-3 text-sm">
                 <dt className="text-slate-600">Conference</dt>
-                <dd className="font-semibold text-slate-900">September 4-5, 2026</dd>
+                <dd className="font-semibold text-slate-900">September 2nd-4th, 2026</dd>
               </div>
             </dl>
             <p className="mt-5 text-sm text-slate-500">These dates are placeholders pending the formal CFP release.</p>

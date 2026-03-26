@@ -136,7 +136,7 @@ export function GlobalAnnouncement({ paths }: { paths: SitePaths }) {
       badge="Announcement"
       body={
         <div className="font-medium">
-          ICSC 2026 will be held in-person at Nuffield College, University of Oxford on September 4th and 5th, 2026.
+          ICSC 2026 will be held in-person at Nuffield College, University of Oxford on September 2nd-4th, 2026.
         </div>
       }
       action={{ href: paths.conferenceHref, label: "View" }}
