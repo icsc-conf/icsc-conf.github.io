@@ -11,8 +11,8 @@ export const deadlines = [
   { label: "Paper Submission", date: "23:59 GMT on May 25th, 2026" },
   { label: "Notification", date: "June 15th, 2026" },
   { label: "Camera Ready", date: "August 17th, 2026" },
-  { label: "Pre-Confernece Workshop", date: "September 3rd, 2026" },
-  { label: "Confernece", date: "September 4th-5th, 2026" }
+  { label: "Pre-Confernece Workshop", date: "September 2nd, 2026" },
+  { label: "Confernece", date: "September 3rd-4th, 2026" }
 ];
 
 export const researchTopics = [
@@ -28,7 +28,7 @@ export const researchTopics = [
 export const snapshotItems = [
   { label: "Host City", value: "Oxford, UK" },
   { label: "Venue", value: "Nuffield College, University of Oxford" },
-  { label: "Conference Dates", value: "September 4-5, 2026" },
+  { label: "Conference Dates", value: "September 2nd-4th 2026" },
   { label: "Format", value: "In-person attendance" },
   {
     label: "Proceedings",
