@@ -18,7 +18,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             International Conference on Social Computing 2026
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-100">
-            ICSC 2026 is at Nuffield College, University of Oxford on September 4th and 5th, 2026. The conference
+            ICSC 2026 is at Nuffield College, University of Oxford on September 2nd-4th, 2026. The conference
             will be held in-person.
           </p>
 
@@ -44,7 +44,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
           <p className="mt-5 max-w-5xl text-slate-700">
             The International Conference on Social Computing (ICSC 2026) seeks to accelerate collaborative research at
             the intersection of big data analytics and social science theory. Hosted at Nuffield College, University of
-            Oxford, on September 4th and 5th, 2026, the conference brings together leading scholars and experts from
+            Oxford, on September 2nd-4th, 2026, the conference brings together leading scholars and experts from
             around the world to foster cross-cultural exchange and interdisciplinary collaboration.
           </p>
           <p className="mt-4 max-w-5xl text-slate-700">
@@ -144,7 +144,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="venue" className="mt-16 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Venue and Proceedings</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Nuffield College, University of Oxford, hosts ICSC 2026 on September 4th and 5th, 2026.
+            Nuffield College, University of Oxford, hosts ICSC 2026 on September 2nd-4th, 2026.
           </p>
           <p className="mt-4 max-w-3xl text-slate-700">
             A selection of outstanding papers will be fast-tracked to the ACM Transactions on Social Computing or the
