@@ -85,7 +85,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
             <p className="mt-4 text-slate-700">
               Submission and review are managed via{" "}
               <a
-                href="https://openreview.net/group?id=icsc-conf.github.io/ICSC/2025/Conference"
+                href="https://openreview.net/group?id=icsc-conf.github.io/ICSC/2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-sky-700 transition hover:text-sky-900"
@@ -134,10 +134,6 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
                   <dd className="font-semibold text-slate-900">{deadline.date}</dd>
                 </div>
               ))}
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3 text-sm">
-                <dt className="text-slate-600">Conference</dt>
-                <dd className="font-semibold text-slate-900">September 2nd-4th, 2026</dd>
-              </div>
             </dl>
             <p className="mt-5 text-sm text-slate-500">These dates are placeholders pending the formal CFP release.</p>
           </div>
