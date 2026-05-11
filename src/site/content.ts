@@ -12,7 +12,7 @@ export const deadlines = [
   { label: "Notification", date: "June 15th, 2026" },
   { label: "Camera Ready", date: "August 17th, 2026" },
   { label: "Pre-Conference Workshop", date: "September 2nd, 2026" },
-  { label: "Conference", date: "September 2nd-4th, 2026" }
+  { label: "Conference", date: "September 3rd-4th, 2026" }
 ];
 
 export const researchTopics = [

@@ -65,16 +65,35 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
 
         <section id="registration" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
-          <p className="mt-4 max-w-3xl text-slate-600">
+          <p className="mt-4 max-w-5xl text-slate-600">
             Registration opens soon. This page will publish fee categories, deadlines, and attendance guidance for the
             in-person conference.
           </p>
           <a
-            href="call.html"
+            href="https://www.oxforduniversitystores.co.uk/conferences-and-events/nuffield-department-of-population-health/events/international-conference-on-social-computing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex rounded-md bg-sky-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-900"
           >
-            Registration Details (Coming Soon)
+            Register Here!
           </a>
+        </section>
+
+        <section id="workshops" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-semibold tracking-tight">Pre-conference Workshops</h2>
+          <p className="mt-4 leading-relaxed text-slate-600">
+            Final workshop details will be published here soon. We anticipate that this will involve workshops on:
+          </p>
+          <ul className="mt-6 space-y-3 text-slate-700">
+            <li>&bull; Transformer Architectures (4 hours)</li>
+            <li>&bull; Sequence Analysis (1 hour)</li>
+            <li>&bull; Multiverse Analysis (1 hour)</li>
+            <li>&bull; Scientometrics (1 hour)</li>
+          </ul>
+          <p className="mt-8 leading-relaxed text-slate-600">
+            This workshop is aimed at early career researchers, and is expected to cost GBP150. We will again
+            hopefully be able to subsidize this cost for a small number of students.
+          </p>
         </section>
 
         <section id="about" className="mt-12 grid gap-6 md:grid-cols-3">
@@ -143,10 +162,10 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
 
         <section id="venue" className="mt-16 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Venue and Proceedings</h2>
-          <p className="mt-4 max-w-3xl text-slate-600">
+          <p className="mt-4 text-slate-600">
             Nuffield College, University of Oxford, hosts ICSC 2026 on September 2nd-4th, 2026.
           </p>
-          <p className="mt-4 max-w-3xl text-slate-700">
+          <p className="mt-4 text-slate-700">
             A selection of outstanding papers will be fast-tracked to the ACM Transactions on Social Computing or the
             Journal of Social Computing.
           </p>

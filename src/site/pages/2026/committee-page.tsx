@@ -20,16 +20,23 @@ export function ConferenceCommitteePage({ paths }: { paths: SitePaths }) {
             Committee roles are being finalized. This page will be updated continuously as confirmations are completed.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {organizingCommittee.map((group) => (
-              <article key={group.title} className="rounded-xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{group.title}</h3>
-                <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                  {group.members.map((member) => (
-                    <li key={member}>{member}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
+            {organizingCommittee.map((group) => {
+              const isWideGroup = group.members.length >= 6;
+
+              return (
+                <article
+                  key={group.title}
+                  className={`rounded-xl border border-slate-200 bg-slate-50 p-5 ${isWideGroup ? "md:col-span-2" : ""}`}
+                >
+                  <h3 className="text-lg font-semibold text-slate-900">{group.title}</h3>
+                  <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                    {group.members.map((member) => (
+                      <li key={member}>{member}</li>
+                    ))}
+                  </ul>
+                </article>
+              );
+            })}
           </div>
         </section>
       </main>
