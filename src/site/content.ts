@@ -144,15 +144,37 @@ export const history = [
 export const organizingCommittee = [
   {
     title: "Steering Committee",
-    members: ["TBD", "TBD", "TBD"]
+    members: [
+      "JarDer Lou, Tsinghua University",
+      "James Evans, University of Chicago",
+      "Xiaoming Fu, University of Göttingen",
+      "Charles Rahal, University of Oxford",
+      "Ridhi Kashyap, University of Oxford"
+    ]
   },
   {
     title: "General Co-Chairs",
-    members: ["Charles Rahal, University of Oxford, United Kingdom", "Daniel Romero, University of Michigan, United States of America", "Adel Daoud, Institute of Analytical Sociology at Linköping University, Sweden"]
+    members: ["Charles Rahal, University of Oxford", "Daniel Romero, University of Michigan", "Adel Daoud, Institute of Analytical Sociology at Linköping University"]
   },
   {
-    title: "TPC Co-Chairs",
-    members: ["Charles Rahal, University of Oxford, United Kingdom", "Daniel Romero, University of Michigan, United States of America", "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China" ]
+    title: "Senior TPC Members",
+    members: ["Charles Rahal, University of Oxford", "Daniel Romero, University of Michigan", "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics" ]
+  },
+  {
+    title: "TPC Members",
+    members: [
+      "Jiani Yan, University of Oxford",
+      "Mingyue Liu, University of Oxford",
+      "Daniel Valdenegro Ibarra, University of Oxford",
+      "Harshith N Srivatsa, Wood Group",
+      "Aparna Ananthasubramaniam, University of Michigan",
+      "Miriam Schirmer, Northwestern",
+      "Wei Ai, University of Michigan",
+      "Savvas Zannettou, Delft",
+      "Henry Dambanemuya, University of Chicago",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
+      "Xuejie Deng, University of Hong Kong"
+    ]
   },
   {
     title: "Poster Co-Chairs",
@@ -164,40 +186,40 @@ export const organizingCommittee = [
   },
   {
     title: "Financial Chairs",
-    members: ["Yuqi Liang, University of Oxford, United Kingdom", "Xuejie Ding, The University of Hong Kong, China", "Ava Keeling, University of Oxford, United Kingdom", "Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
+    members: ["Yuqi Liang, University of Oxford", "Xuejie Ding, The University of Hong Kong", "Ava Keeling, University of Oxford", "Jan Meyerhoff, Leibniz Universität Hannover"]
   },
   {
     title: "Registration Chair",
-    members: ["TBD"]
+    members: ["Aarushi Sharma, University of St. Andrews"]
   },
   {
     title: "Publicity Co-Chairs",
-    members: ["Chenxi", "Adel Daoud, Institute of Analytical Sociology at Linköping University, Sweden", "Zerui Tian, University of Oxford, United Kingdom"]
+    members: ["Chenxi", "Adel Daoud, Institute of Analytical Sociology at Linköping University", "Zerui Tian, University of Oxford"]
   },
   {
     title: "Publication Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China"]
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
     title: "Website Chairs",
-    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China", "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom", "Anda-Raluca Epure, University of Oxford, United Kingdom"]
+    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics", "Bo Zhao, Xi'an Jiaotong-Liverpool University", "Anda-Raluca Epure, University of Oxford"]
   },
   {
     title: "Workshops Chair",
-    members: ["Zerui Tian, University of Oxford, United Kingdom"]
+    members: ["Zerui Tian, University of Oxford"]
   },
   {
     title: "Accessibility Chair",
-    members: ["Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
+    members: ["Jan Meyerhoff, Leibniz Universität Hannover"]
   },
   { title: "Proceedings Chair",
-    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics, China"]
+    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics"]
   },
   { title: "Liaison Co-Chairs",
-    members: ["Daniel Valdenegro, University of Oxford, United Kingdom", "Jiani Yan, University of Oxford, United Kingdom", "Linda Li, University College London, United Kingdom", "Ava Keeling, University of Oxford, United Kingdom", "Anda-Raluca Epure, University of Oxford, United Kingdom"]
+    members: ["Daniel Valdenegro, University of Oxford", "Jiani Yan, University of Oxford", "Linda Li, University College London", "Ava Keeling, University of Oxford", "Anda-Raluca Epure, University of Oxford"]
   }, 
   { title: "Swag Chair",
-    members: ["Luyin Zhang, Princeton University, United States"]
+    members: ["Luyin Zhang, Princeton University"]
   }, 
 ];
 
