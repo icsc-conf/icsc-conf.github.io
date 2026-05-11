@@ -153,12 +153,13 @@ export const organizingCommittee = [
     ]
   },
   {
-    title: "General Co-Chairs",
-    members: ["Charles Rahal, University of Oxford", "Daniel Romero, University of Michigan", "Adel Daoud, Institute of Analytical Sociology at Linköping University"]
-  },
-  {
     title: "Senior TPC Members",
-    members: ["Charles Rahal, University of Oxford", "Daniel Romero, University of Michigan", "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics" ]
+    members: [
+      "Charles Rahal, University of Oxford",
+      "Daniel Romero, University of Michigan",
+      "Adel Daoud, Institute of Analytical Sociology at Linköping University",
+      "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics"
+    ]
   },
   {
     title: "TPC Members",
@@ -166,14 +167,29 @@ export const organizingCommittee = [
       "Jiani Yan, University of Oxford",
       "Mingyue Liu, University of Oxford",
       "Daniel Valdenegro Ibarra, University of Oxford",
-      "Harshith N Srivatsa, Wood Group",
       "Aparna Ananthasubramaniam, University of Michigan",
-      "Miriam Schirmer, Northwestern",
-      "Wei Ai, University of Michigan",
-      "Savvas Zannettou, Delft",
-      "Henry Dambanemuya, University of Chicago",
       "Bo Zhao, Xi'an Jiaotong-Liverpool University",
-      "Xuejie Deng, University of Hong Kong"
+      "Miriam Schirmer, Harvard Business School",
+      "Wei Ai, University of Maryland, College Park",
+      "Hao Peng, City University of Hong Kong",
+      "Savvas Zannettou, TU Delft",
+      "Henry Kudzanai Dambanemuya, The University of Chicago",
+      "Harshith N Srivatsa, Wood Group",
+      "Pu Zhang, Hong Kong University of Science and Technology (Guangzhou)",
+      "Bo Liu, Southeast University",
+      "Aleksandar Stanković, University of Novi Sad",
+      "Roy Ka-Wei Lee, Singapore University of Technology and Design",
+      "Wenzhong Li, Nanjing University",
+      "Zixi Chen, NYU Shanghai",
+      "Yong-Feng Ge, Victoria University",
+      "Hua Wang, Victoria University",
+      "Xiu-Xiu Zhan, Hangzhou Normal University",
+      "Shihan Lin, University of Michigan",
+      "Fei Hao, Shaanxi Normal University",
+      "Xuejie Ding, The University of Hong Kong",
+      "Yang Chen, Fudan University",
+      "Huilian Sophie Qiu, Northwestern University",
+      "Zike Zhang, Zhejiang University"
     ]
   },
   {
