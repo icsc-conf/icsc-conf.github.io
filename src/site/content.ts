@@ -11,8 +11,8 @@ export const deadlines = [
   { label: "Paper Submission", date: "23:59 GMT on May 25th, 2026" },
   { label: "Notification", date: "June 15th, 2026" },
   { label: "Camera Ready", date: "August 17th, 2026" },
-  { label: "Pre-Confernece Workshop", date: "September 2nd, 2026" },
-  { label: "Confernece", date: "September 3rd-4th, 2026" }
+  { label: "Pre-Conference Workshop", date: "September 2nd, 2026" },
+  { label: "Conference", date: "September 2nd-4th, 2026" }
 ];
 
 export const researchTopics = [
@@ -49,7 +49,7 @@ export const quickActions = [
     text: "Review the paper submission scope, guidelines, and dates."
   },
   {
-    href: "oc.html",
+    href: "https://icsc-conf.github.io/2026/oc.html",
     title: "Committee",
     text: "See the organizing and program committee for ICSC 2026."
   },
