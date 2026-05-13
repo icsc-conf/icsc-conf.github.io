@@ -4,6 +4,7 @@
   "type": "module",
   "packageManager": "pnpm@10.30.3",
   "scripts": {
+    "dev": "tsx scripts/dev-server.ts",
     "build": "pnpm run build:css && pnpm run build:pages",
     "build:css": "tailwindcss -i ./src/styles/site.css -o ./site.css --minify",
     "build:pages": "tsx scripts/build-pages.tsx",
