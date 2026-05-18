@@ -126,8 +126,8 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
               <p>{paperSubmissionGuidelines.join(" ")}</p>
               <ol className="list-decimal space-y-3 pl-6">
                 <li>
-                  Submissions for consideration in the conference proceedings must be at most 12 pages, in Springer
-                  CCIS format.
+                  Submissions for consideration in the conference proceedings must be 12–15 pages, including
+                  references, in Springer CCIS format.
                 </li>
                 <li>
                   For authors who are not interested in being considered for the conference proceedings, submissions
