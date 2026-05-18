@@ -2,8 +2,8 @@ export const tracks = [
   "Digital and Computational Demography",
   "Social applications of Large Language Models",
   "Large-scale social media analytics and intelligence",
-  "Digital Inclusion in the Global South",
-  "Human-computer interaction across various domains",
+  "Digital inclusion in the Global South",
+  "The Science of (Open) Science",
   "Applied social computing applications in diverse areas such as health and finance"
 ];
 
@@ -148,105 +148,92 @@ export const organizingCommittee = [
       "JarDer Lou, Tsinghua University",
       "James Evans, University of Chicago",
       "Xiaoming Fu, University of Göttingen",
-      "Charles Rahal, University of Oxford",
-      "Ridhi Kashyap, University of Oxford"
+      "Charles Rahal, University of Oxford"
     ]
   },
   {
-    title: "Senior TPC Members",
+    title: "Program Committee",
     members: [
-      "Charles Rahal, University of Oxford",
+      "Charles Rahal, University of Oxford, United Kingdom",
       "Daniel Romero, University of Michigan",
-      "Adel Daoud, Institute of Analytical Sociology at Linköping University",
-      "Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics"
+      "Adel Daoud, Linköping University",
+      "Mengying Zhou, Shanghai University of Finance and Economics."
     ]
-  },
-  {
-    title: "TPC Members",
-    members: [
-      "Jiani Yan, University of Oxford",
-      "Mingyue Liu, University of Oxford",
-      "Daniel Valdenegro Ibarra, University of Oxford",
-      "Aparna Ananthasubramaniam, University of Michigan",
-      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
-      "Miriam Schirmer, Harvard Business School",
-      "Wei Ai, University of Maryland, College Park",
-      "Hao Peng, City University of Hong Kong",
-      "Savvas Zannettou, TU Delft",
-      "Henry Kudzanai Dambanemuya, The University of Chicago",
-      "Harshith N Srivatsa, Wood Group",
-      "Pu Zhang, Hong Kong University of Science and Technology (Guangzhou)",
-      "Bo Liu, Southeast University",
-      "Aleksandar Stanković, University of Novi Sad",
-      "Roy Ka-Wei Lee, Singapore University of Technology and Design",
-      "Wenzhong Li, Nanjing University",
-      "Zixi Chen, NYU Shanghai",
-      "Yong-Feng Ge, Victoria University",
-      "Hua Wang, Victoria University",
-      "Xiu-Xiu Zhan, Hangzhou Normal University",
-      "Shihan Lin, University of Michigan",
-      "Fei Hao, Shaanxi Normal University",
-      "Xuejie Ding, The University of Hong Kong",
-      "Yang Chen, Fudan University",
-      "Huilian Sophie Qiu, Northwestern University",
-      "Zike Zhang, Zhejiang University"
-    ]
-  },
-  {
-    title: "Poster Co-Chairs",
-    members: ["TBD", "TBD"]
-  },
-  {
-    title: "Local Co-Chairs",
-    members: ["TBD", "TBD"]
   },
   {
     title: "Financial Chairs",
-    members: ["Yuqi Liang, University of Oxford", "Xuejie Ding, The University of Hong Kong", "Ava Keeling, University of Oxford", "Jan Meyerhoff, Leibniz Universität Hannover"]
+    members: [
+      "Yuqi Liang, University of Oxford, United Kingdom",
+      "Xuejie Ding, University of Hong Kong, China",
+      "Ava Keeling, University of Oxford, United Kingdom",
+      "Jan Meyerhoff, Leibniz Universität Hannover, Germany"
+    ]
   },
   {
     title: "Registration Chair",
-    members: ["Aarushi Sharma, University of St. Andrews"]
+    members: ["TBD"]
   },
   {
     title: "Publicity Co-Chairs",
-    members: ["Chenxi", "Adel Daoud, Institute of Analytical Sociology at Linköping University", "Zerui Tian, University of Oxford"]
+    members: [
+      "Chenxi Li, University of Oxford, United Kingdom",
+      "Adel Daoud, Linköping University, Sweden",
+      "Zerui Tian, University of Oxford, United Kingdom",
+      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+    ]
   },
   {
     title: "Publication Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
+    members: [
+      "Mengying Zhou, Shanghai University of Finance and Economics, China",
+      "Xiu-Xiu Zhan, Hangzhou Normal University, China"
+    ]
   },
   {
     title: "Website Chairs",
-    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics", "Bo Zhao, Xi'an Jiaotong-Liverpool University", "Anda-Raluca Epure, University of Oxford"]
+    members: [
+      "Mengying Zhou, Shanghai University of Finance and Economics, China",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom",
+      "Anda-Raluca Epure, University of Oxford, Unted Kingdom"
+    ]
   },
   {
     title: "Workshops Chair",
-    members: ["Zerui Tian, University of Oxford"]
+    members: ["Zerui Tian, University of Oxford, United Kingdom"]
   },
   {
     title: "Accessibility Chair",
-    members: ["Jan Meyerhoff, Leibniz Universität Hannover"]
+    members: ["Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
   },
-  { title: "Proceedings Chair",
-    members: ["Mengying Zhou, School of Computing and Artificial Intelligence, Shanghai University of Finance and Economics"]
+  {
+    title: "Proceedings Chair",
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China"]
   },
-  { title: "Liaison Co-Chairs",
-    members: ["Daniel Valdenegro, University of Oxford", "Jiani Yan, University of Oxford", "Linda Li, University College London", "Ava Keeling, University of Oxford", "Anda-Raluca Epure, University of Oxford"]
-  }, 
-  { title: "Swag Chair",
-    members: ["Luyin Zhang, Princeton University"]
-  }, 
+  {
+    title: "Liaison Co-Chairs",
+    members: [
+      "Daniel Valdenegro, University of Oxford, United Kingdom",
+      "Jiani Yan, University of Oxford, United Kingdom",
+      "Linda Li, University College London, United Kingdom",
+      "Ava Keeling, University of Oxford, United Kingdom",
+      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+    ]
+  },
+  {
+    title: "Swag Chair",
+    members: ["Luyin Zhang, Princeton University, United States"]
+  },
 ];
 
-export const placeholderTpcCoChairs = [
-  "Yang Chen, Fudan University, China",
-  "Charles Rahal, University of Oxford, United Kingdom"
+export const programCommittee = [
+  "Charles Rahal, University of Oxford",
+  "Daniel Romero, University of Michigan",
+  "Adel Daoud, Linköping University",
+  "Mengying Zhou, Shanghai University of Finance and Economics"
 ];
 
 export const paperSubmissionGuidelines = [
   "Authors are encouraged to submit papers addressing state-of-the-art research and development in all aspects of social computing.",
   "Innovative, early-stage ideas, proofs-of-concept, and preliminary results are welcome.",
-  "Submissions must be at most 12 pages in Springer CCIS format.",
-  "The first page should include the paper title, abstract, and author affiliation information."
+  "We welcome submissions in two formats:"
 ];

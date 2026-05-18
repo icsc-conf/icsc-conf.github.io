@@ -3,25 +3,33 @@ import { ConferenceAnnouncementHero, SiteShell, type SitePaths } from "../../com
 import {
   deadlines,
   paperSubmissionGuidelines,
-  placeholderTpcCoChairs
+  programCommittee
 } from "../../content";
 
 export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
   const callTopics = [
     "Digital and Computational Demography",
-    "Online social network analysis, mining, and modeling",
+    "Social applications of Large Language Models.",
     "Large-scale social media analytics and intelligence",
-    "Digital Inclusion in the Global South",
-    "Human-computer interaction across various domains",
+    "Digital inclusion in the Global South",
+    "The Science of (Open) Science",
     "Applied social computing applications in diverse areas such as health and finance"
   ];
 
   return (
-    <SiteShell paths={paths}>
+    <SiteShell
+      paths={paths}
+      footerLinks={[
+        { href: "index.html#registration", label: "Registration" },
+        { href: "index.html#programme", label: "Programme" },
+        { href: "index.html#venue", label: "Venue" },
+        { href: "index.html#venue", label: "Travel" }
+      ]}
+    >
       <ConferenceAnnouncementHero
         badge="CALL FOR PAPERS"
         title="ICSC 2026 Call For Papers"
-        description="We invite original, unpublished submissions for the in-person conference at Nuffield College, Oxford on September 2nd-4th, 2026."
+        description="We invite submissions for the in-person conference at Nuffield College, Oxford on September 2nd-4th, 2026. Participation in conference proceedings is optional."
         primaryAction={{ href: "index.html#dates", label: "Important Dates" }}
         compact
       />
@@ -37,8 +45,28 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
           </p>
           <p className="mt-4 text-slate-700">
             A selection of outstanding papers will be fast-tracked to ACM Transactions on Social Computing or the
-            Journal of Social Computing. The conference proceedings and the above journals are all indexed by all major
-            scholarly services. Best Paper and Best Student Paper awards will be presented at the conference banquet.
+            Journal of Social Computing. Papers will be invited as either:
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-700">
+            <li>An invited keynote talk</li>
+            <li>A parallel track session</li>
+            <li>A poster</li>
+          </ul>
+          <p className="mt-4 text-slate-700">
+            If authors have a strong preference for either of these tracks, please feel free to indicate this on your
+            title page. The conference proceedings and the above journals are all indexed by all major scholarly
+            services. Best Paper and Best Student Paper awards will be presented at the conference dinner.
+          </p>
+          <p className="mt-4 text-slate-700">
+            A media pack announcing the call for papers can{" "}
+            <a
+              href="ICSC_flyers.zip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-sky-700 transition hover:text-sky-900"
+            >
+              be found here.
+            </a>
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
             <a
@@ -94,17 +122,30 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
               </a>
               .
             </p>
-            <ul className="mt-6 space-y-4 text-slate-700">
-              {paperSubmissionGuidelines.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-              <li>Each submission will receive at least three independent blind peer reviews from the program committee.</li>
-              <li>At least one author of each accepted paper must register and present at the conference.</li>
-              <li>Accepted papers are expected to appear in the conference proceedings published by Springer CCIS.</li>
-            </ul>
+            <div className="mt-6 space-y-4 text-slate-700">
+              <p>{paperSubmissionGuidelines.join(" ")}</p>
+              <ol className="list-decimal space-y-3 pl-6">
+                <li>
+                  Submissions for consideration in the conference proceedings must be at most 12 pages, in Springer
+                  CCIS format.
+                </li>
+                <li>
+                  For authors who are not interested in being considered for the conference proceedings, submissions
+                  can come in two formats:
+                  <ol className="mt-2 space-y-2 pl-6">
+                    <li>2.a Extended abstracts of two pages for preliminary work in progress</li>
+                    <li>2.b Full, open access version of previously published work.</li>
+                  </ol>
+                </li>
+              </ol>
+              <p>
+                Each submission will receive at least three independent blind peer reviews (single or double, at the
+                author's preference), with reviewers chosen by the program committee.
+              </p>
+            </div>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
               <a
-                href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md border border-slate-300 px-3 py-2 font-semibold text-slate-800 hover:border-sky-700 hover:text-sky-700"
@@ -112,7 +153,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
                 Springer LaTeX Template
               </a>
               <a
-                href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+                href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/7117506/data/v1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md border border-slate-300 px-3 py-2 font-semibold text-slate-800 hover:border-sky-700 hover:text-sky-700"
@@ -135,16 +176,15 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
                 </div>
               ))}
             </dl>
-            <p className="mt-5 text-sm text-slate-500">These dates are placeholders pending the formal CFP release.</p>
           </div>
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-[0.9fr_1.1fr]">
           <article className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-3xl font-semibold tracking-tight">TPC Co-Chairs</h2>
+            <h2 className="text-3xl font-semibold tracking-tight">Program Committee</h2>
             <ul className="mt-5 space-y-3 text-slate-700">
-              {placeholderTpcCoChairs.map((chair) => (
-                <li key={chair}>{chair}</li>
+              {programCommittee.map((member) => (
+                <li key={member}>{member}</li>
               ))}
             </ul>
           </article>
@@ -153,7 +193,10 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
             <h2 className="text-3xl font-semibold tracking-tight">Review and Presentation Policy</h2>
             <ul className="mt-5 space-y-3 text-slate-700">
               <li>All submissions should present original work and must not be under review elsewhere.</li>
-              <li>Reviews will be blind and based on novelty, technical quality, clarity, and relevance.</li>
+              <li>
+                Reviews will be blind (single or double, at the author's preference), and papers will be evaluated
+                based on their novelty, technical quality, clarity, and relevance.
+              </li>
               <li>Accepted papers must be presented in person at ICSC 2026 unless an exception is approved by chairs.</li>
               <li>Final publication instructions will be released with the camera-ready package.</li>
             </ul>

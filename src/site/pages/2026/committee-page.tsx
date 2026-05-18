@@ -4,7 +4,15 @@ import { organizingCommittee } from "../../content";
 
 export function ConferenceCommitteePage({ paths }: { paths: SitePaths }) {
   return (
-    <SiteShell paths={paths}>
+    <SiteShell
+      paths={paths}
+      footerLinks={[
+        { href: "index.html#registration", label: "Registration" },
+        { href: "call.html", label: "Call for Papers" },
+        { href: "oc.html", label: "Committee" },
+        { href: "index.html#programme", label: "Programme" }
+      ]}
+    >
       <ConferenceAnnouncementHero
         badge="ORGANIZING COMMITTEE"
         title="ICSC 2026 Committee"

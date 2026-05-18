@@ -22,7 +22,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             will be held in-person.
           </p>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {quickActions.map((action) => (
               <a
                 key={action.title}
@@ -51,7 +51,9 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             Building on Oxford&apos;s strengths in sociology and demographic data science, ICSC 2026 supports research that
             links data-driven methods with deeper social mechanisms shaping human behavior. By examining social
             networks across online and offline contexts, the conference highlights how computational evidence and
-            social theory can jointly explain interaction patterns, collective dynamics, and societal change.
+            social theory can jointly explain interaction patterns, collective dynamics, and societal change. If you
+            have any questions about the conference, please don&apos;t hesitate to get in contact via{" "}
+            <a href="mailto:icsc26@demography.ox.ac.uk">icsc26@demography.ox.ac.uk</a>.
           </p>
           <div className="mt-6">
             <a
@@ -66,8 +68,18 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="registration" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
           <p className="mt-4 max-w-5xl text-slate-600">
-            Registration opens soon. This page will publish fee categories, deadlines, and attendance guidance for the
-            in-person conference.
+            Registration opens soon. We are anticipating that, subject to sponorship, the conference registration fees
+            will be £150 for students, and £200 for all other registrants (they may end up being slightly lower). We
+            will likely be able to offer a very small number of discounted rates (£75/£100) upon application; please get
+            in contact with us as appropriate at{" "}
+            <a
+              href="mailto:icsc26@demography.ox.ac.uk"
+              className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+            >
+              icsc26@demography.ox.ac.uk
+            </a>
+            . A conference dinner (3rd September, 2026) has been confirmed with Nuffield College, and is entirely
+            optional.
           </p>
           <a
             href="https://www.oxforduniversitystores.co.uk/conferences-and-events/nuffield-department-of-population-health/events/international-conference-on-social-computing"
@@ -91,7 +103,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             <li>&bull; Scientometrics (1 hour)</li>
           </ul>
           <p className="mt-8 leading-relaxed text-slate-600">
-            This workshop is aimed at early career researchers, and is expected to cost GBP150. We will again
+            This workshop is aimed at early career researchers, and is expected to cost £150. We will again
             hopefully be able to subsidize this cost for a small number of students.
           </p>
         </section>
@@ -115,7 +127,8 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             <p className="text-sm font-semibold text-sky-700">03</p>
             <h2 className="mt-2 text-xl font-semibold">Publication Pathways</h2>
             <p className="mt-3 text-slate-600">
-              Selected contributions are eligible for journal fast-track opportunities in leading social computing venues.
+              Selected contributions are eligible for journal fast-track opportunities in leading social computing
+              venues, in addition to the conference proceedings.
             </p>
           </article>
         </section>
@@ -125,7 +138,8 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             <h2 className="text-3xl font-semibold tracking-tight">Main Conference Tracks</h2>
             <p className="mt-4 max-w-2xl text-slate-600">
               The 2026 program centers on interdisciplinary advances in models, methods, platforms, and responsible
-              deployment.
+              deployment. We are especially in submissions related to the following subject areas, but are in no way
+              limited to these:
             </p>
             <ul className="mt-8 grid gap-4">
               {tracks.map((track) => (
@@ -152,7 +166,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
               ))}
             </dl>
             <a
-              href="call.html"
+              href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v8"
               className="mt-6 inline-flex rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-sky-700 hover:text-sky-700"
             >
               Download CFP (Template)
@@ -166,8 +180,9 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
             Nuffield College, University of Oxford, hosts ICSC 2026 on September 2nd-4th, 2026.
           </p>
           <p className="mt-4 text-slate-700">
-            A selection of outstanding papers will be fast-tracked to the ACM Transactions on Social Computing or the
-            Journal of Social Computing.
+            The conference publishes conference proceedings, which authors can optionally choose to publish their
+            papers in. A selection of outstanding papers will be fast-tracked to the ACM Transactions on Social
+            Computing or the Journal of Social Computing.
           </p>
         </section>
       </main>

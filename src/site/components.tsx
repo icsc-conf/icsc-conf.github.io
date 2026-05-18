@@ -22,6 +22,11 @@ export type SnapshotItem = {
   value: string;
 };
 
+export type FooterLink = {
+  href: string;
+  label: string;
+};
+
 type AnnouncementAction = {
   href: string;
   label: string;
@@ -170,7 +175,21 @@ export function SiteHeader({ paths }: { paths: SitePaths }) {
   );
 }
 
-export function SiteFooter({ paths }: { paths: SitePaths }) {
+export function SiteFooter({
+  paths,
+  conferenceLinks
+}: {
+  paths: SitePaths;
+  conferenceLinks?: FooterLink[];
+}) {
+  const links = conferenceLinks ?? [
+    { href: `${paths.conferenceHref}#registration`, label: "Registration" },
+    { href: paths.conferenceHref.replace("index.html", "call.html"), label: "Call for Papers" },
+    { href: `${paths.conferenceHref}#programme`, label: "Programme" },
+    { href: paths.conferenceHref.replace("index.html", "oc.html"), label: "Committee" },
+    { href: paths.conferenceHref.replace("index.html", "sponsors.html"), label: "Information for Sponsors" }
+  ];
+
   return (
     <footer id="contact" className="w-full border-t border-slate-800 bg-slate-950 text-slate-300">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 lg:grid-cols-[1.6fr_1fr_1fr] lg:px-10">
@@ -198,31 +217,13 @@ export function SiteFooter({ paths }: { paths: SitePaths }) {
         <div>
           <h3 className="text-sm font-semibold tracking-[0.2em] text-cyan-200">ICSC2026 @ OXFORD</h3>
           <ul className="mt-4 space-y-2 text-sm">
-            <li>
-              <a href={`${paths.conferenceHref}#registration`} className="transition hover:text-cyan-200">
-                Registration
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref.replace("index.html", "call.html")}`} className="transition hover:text-cyan-200">
-                Call for Papers
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref.replace("index.html", "oc.html")}`} className="transition hover:text-cyan-200">
-                Committee
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref.replace("index.html", "sponsors.html")}`} className="transition hover:text-cyan-200">
-                Information for Sponsors
-              </a>
-            </li>
-            <li>
-              <a href={`${paths.conferenceHref}#programme`} className="transition hover:text-cyan-200">
-                Programme
-              </a>
-            </li>
+            {links.map((link) => (
+              <li key={`${link.href}-${link.label}`}>
+                <a href={link.href} className="transition hover:text-cyan-200">
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -292,17 +293,19 @@ export function ConferenceAnnouncementHero({
 
 export function SiteShell({
   paths,
-  children
+  children,
+  footerLinks
 }: {
   paths: SitePaths;
   children: ReactNode;
+  footerLinks?: FooterLink[];
 }) {
   return (
     <div className="min-h-screen bg-[var(--color-page)] text-slate-900">
       <SiteHeader paths={paths} />
       <GlobalAnnouncement paths={paths} />
       {children}
-      <SiteFooter paths={paths} />
+      <SiteFooter paths={paths} conferenceLinks={footerLinks} />
     </div>
   );
 }
