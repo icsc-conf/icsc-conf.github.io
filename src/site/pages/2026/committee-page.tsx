@@ -10,6 +10,7 @@ export function ConferenceCommitteePage({ paths }: { paths: SitePaths }) {
         { href: "index.html#registration", label: "Registration" },
         { href: "call.html", label: "Call for Papers" },
         { href: "oc.html", label: "Committee" },
+        { href: "sponsors.html", label: "Information for Sponsors" },
         { href: "index.html#programme", label: "Programme" }
       ]}
     >

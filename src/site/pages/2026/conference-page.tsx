@@ -68,18 +68,18 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="registration" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
           <p className="mt-4 max-w-5xl text-slate-600">
-            Registration opens soon. We are anticipating that, subject to sponorship, the conference registration fees
-            will be £150 for students, and £200 for all other registrants (they may end up being slightly lower). We
-            will likely be able to offer a very small number of discounted rates (£75/£100) upon application; please get
-            in contact with us as appropriate at{" "}
+            Registration is open Now! The conference registration fees will be £150 for students, and £200 for all
+            other registrants. Pre-conference workshop registration costs £100. A conference dinner (3rd September,
+            2026) has been confirmed with Nuffield College, and is entirely optional. This dinner rate is heavily
+            subsidized, thanks to sponsors at the College, and will cost £30. Thanks to the generosity of Nuffield
+            College, we will be able to offer ten bursaries of up to £100 for either conference registration or workshop
+            attendance; please get in contact with us as appropriate at{" "}
             <a
               href="mailto:icsc26@demography.ox.ac.uk"
               className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
             >
               icsc26@demography.ox.ac.uk
             </a>
-            . A conference dinner (3rd September, 2026) has been confirmed with Nuffield College, and is entirely
-            optional.
           </p>
           <a
             href="https://www.oxforduniversitystores.co.uk/conferences-and-events/nuffield-department-of-population-health/events/international-conference-on-social-computing"

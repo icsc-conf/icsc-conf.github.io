@@ -148,80 +148,114 @@ export const organizingCommittee = [
       "JarDer Lou, Tsinghua University",
       "James Evans, University of Chicago",
       "Xiaoming Fu, University of Göttingen",
-      "Charles Rahal, University of Oxford"
+      "Charles Rahal, University of Oxford",
+      "Ridhi Kashyap, University of Oxford"
     ]
   },
   {
-    title: "Program Committee",
+    title: "Senior TPC Members",
     members: [
-      "Charles Rahal, University of Oxford, United Kingdom",
+      "Charles Rahal, University of Oxford",
       "Daniel Romero, University of Michigan",
-      "Adel Daoud, Linköping University",
-      "Mengying Zhou, Shanghai University of Finance and Economics."
+      "Adel Daoud, Institute of Analytical Sociology at Linköping University",
+      "Mengying Zhou, Shanghai University of Finance and Economics"
     ]
+  },
+  {
+    title: "TPC Members",
+    members: [
+      "Jiani Yan, University of Oxford",
+      "Mingyue Liu, University of Oxford",
+      "Daniel Valdenegro Ibarra, University of Oxford",
+      "Aparna Ananthasubramaniam, University of Michigan",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
+      "Miriam Schirmer, Harvard Business School",
+      "Wei Ai, University of Maryland, College Park",
+      "Hao Peng, City University of Hong Kong",
+      "Savvas Zannettou, TU Delft",
+      "Henry Kudzanai Dambanemuya, The University of Chicago",
+      "Harshith N Srivatsa, Wood Group",
+      "Pu Zhang, Hong Kong University of Science and Technology (Guangzhou)",
+      "Bo Liu, Southeast University",
+      "Aleksandar Stanković, University of Novi Sad",
+      "Roy Ka-Wei Lee, Singapore University of Technology and Design",
+      "Wenzhong Li, Nanjing University",
+      "Zixi Chen, NYU Shanghai",
+      "Yong-Feng Ge, Victoria University",
+      "Hua Wang, Victoria University",
+      "Xiu-Xiu Zhan, Hangzhou Normal University",
+      "Shihan Lin, University of Michigan",
+      "Fei Hao, Shaanxi Normal University",
+      "Xuejie Ding, The University of Hong Kong",
+      "Yang Chen, Fudan University",
+      "Huilian Sophie Qiu, Northwestern University",
+      "Zike Zhang, Zhejiang University"
+    ]
+  },
+  {
+    title: "Poster Co-Chairs",
+    members: ["TBD"]
   },
   {
     title: "Financial Chairs",
     members: [
-      "Yuqi Liang, University of Oxford, United Kingdom",
-      "Xuejie Ding, University of Hong Kong, China",
-      "Ava Keeling, University of Oxford, United Kingdom",
-      "Jan Meyerhoff, Leibniz Universität Hannover, Germany"
+      "Yuqi Liang, University of Oxford",
+      "Xuejie Ding, The University of Hong Kong",
+      "Ava Keeling, University of Oxford",
+      "Jan Meyerhoff, Leibniz Universität Hannover"
     ]
   },
   {
     title: "Registration Chair",
-    members: ["TBD"]
+    members: ["Aarushi Sharma, University of St. Andrews"]
   },
   {
     title: "Publicity Co-Chairs",
     members: [
-      "Chenxi Li, University of Oxford, United Kingdom",
-      "Adel Daoud, Linköping University, Sweden",
-      "Zerui Tian, University of Oxford, United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+      "Chenxi Li, University of Oxford",
+      "Ekaterina Degtiareva, University of Oxford",
+      "Anda-Raluca Epure, University of Oxford",
+      "Zerui Tian, University of Oxford",
+      "Panzirui Zhang, Sichuan University (SCU)"
     ]
   },
   {
     title: "Publication Chair",
-    members: [
-      "Mengying Zhou, Shanghai University of Finance and Economics, China",
-      "Xiu-Xiu Zhan, Hangzhou Normal University, China"
-    ]
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
     title: "Website Chairs",
     members: [
-      "Mengying Zhou, Shanghai University of Finance and Economics, China",
-      "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, Unted Kingdom"
+      "Mengying Zhou, Shanghai University of Finance and Economics",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
+      "Anda-Raluca Epure, University of Oxford"
     ]
   },
   {
     title: "Workshops Chair",
-    members: ["Zerui Tian, University of Oxford, United Kingdom"]
+    members: ["Zerui Tian, University of Oxford"]
   },
   {
     title: "Accessibility Chair",
-    members: ["Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
+    members: ["Jan Meyerhoff, Leibniz Universität Hannover"]
   },
   {
     title: "Proceedings Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China"]
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
     title: "Liaison Co-Chairs",
     members: [
-      "Daniel Valdenegro, University of Oxford, United Kingdom",
-      "Jiani Yan, University of Oxford, United Kingdom",
-      "Linda Li, University College London, United Kingdom",
-      "Ava Keeling, University of Oxford, United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+      "Daniel Valdenegro, University of Oxford",
+      "Jiani Yan, University of Oxford",
+      "Linda Li, London School of Economics and Political Science",
+      "Ava Keeling, University of Oxford",
+      "Anda-Raluca Epure, University of Oxford"
     ]
   },
   {
     title: "Swag Chair",
-    members: ["Luyin Zhang, Princeton University, United States"]
+    members: ["Luyin Zhang, Princeton University"]
   },
 ];
 
