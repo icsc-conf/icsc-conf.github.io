@@ -74,42 +74,42 @@ export const history = [
     title: "Conference on Online Social Behaviour",
     date: "June 10-11, 2016",
     venue: "UChicago Center in Beijing, China",
-    href: "../2016/index.html"
+    href: "past_conferences/2016/index.html"
   },
   {
     year: "2017",
     title: "Conference on Online Social Behaviour",
     date: "May 30-June 4, 2017",
     venue: "Beijing International Convention Center, Beijing, China",
-    href: "../2017/index.html"
+    href: "past_conferences/2017/index.html"
   },
   {
     year: "2018",
     title: "Conference on Online Social Behaviour",
     date: "November 3, 2018",
     venue: "Jin Chun Yuan Hotel, Beijing, China",
-    href: "../2018/index.html"
+    href: "past_conferences/2018/index.html"
   },
   {
     year: "2019",
     title: "International Conference on Social Computing",
     date: "August 26-27, 2019",
     venue: "Tsinghua University, Beijing, China",
-    href: "../2019/index.html"
+    href: "past_conferences/2019/index.html"
   },
   {
     year: "2020",
     title: "International Conference on Social Computing",
     date: "December 14-15, 2020",
     venue: "Hybrid (Beijing and online)",
-    href: "../2020/index.html"
+    href: "past_conferences/2020/index.html"
   },
   {
     year: "2021",
     title: "International Conference on Social Computing",
     date: "December 10-11, 2021",
     venue: "Hybrid (Beijing and online)",
-    href: "../2021/index.html"
+    href: "past_conferences/2021/index.html"
   },
   {
     year: "2022",
@@ -123,21 +123,21 @@ export const history = [
     title: "International Conference on Social Computing",
     date: "September 2-3, 2023",
     venue: "Tsinghua University area, Beijing, China",
-    href: "../2023/index.html"
+    href: "past_conferences/2023/index.html"
   },
   {
     year: "2024",
     title: "International Conference on Social Computing",
     date: "2024 edition",
     venue: "Hong Kong University of Science and Technology (Guangzhou), China",
-    href: "../2024/index.html"
+    href: "past_conferences/2024/index.html"
   },
   {
     year: "2025",
     title: "International Conference on Social Computing",
     date: "December 12-13, 2025",
     venue: "Fudan University, Shanghai, China",
-    href: "../2025/index.html"
+    href: "past_conferences/2025/index.html"
   }
 ];
 

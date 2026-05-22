@@ -94,6 +94,7 @@ function renderRedirectDocument({
 const scriptFilename = fileURLToPath(import.meta.url);
 const scriptDirname = path.dirname(scriptFilename);
 const repositoryRoot = path.resolve(scriptDirname, "..");
+const outputRoot = process.env.SITE_OUTPUT_DIR ? path.resolve(repositoryRoot, process.env.SITE_OUTPUT_DIR) : repositoryRoot;
 
 const rootPaths = createSitePaths("root");
 const standalonePaths = createSitePaths("standalone");
@@ -162,5 +163,5 @@ const pages: PageSpec[] = [
 ];
 
 for (const page of pages) {
-  await writePage(repositoryRoot, page);
+  await writePage(outputRoot, page);
 }
