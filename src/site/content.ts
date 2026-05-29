@@ -281,10 +281,6 @@ export const organizingCommittee = [
     ]
   },
   {
-    title: "Publication Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
-  },
-  {
     title: "Website Chairs",
     members: [
       "Mengying Zhou, Shanghai University of Finance and Economics",
