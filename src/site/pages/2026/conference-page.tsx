@@ -1,6 +1,6 @@
 import React from "react";
 import { SiteShell, type SitePaths } from "../../components";
-import { deadlines, quickActions, tracks } from "../../content";
+import { deadlines, latestNews, preConferenceWorkshops, quickActions, tracks } from "../../content";
 
 export function Conference2026Page({ paths }: { paths: SitePaths }) {
   return (
@@ -38,7 +38,33 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
       </section>
 
       <main className="mx-auto w-full max-w-7xl px-6 py-16 lg:px-10">
-        <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section id="announcements" className="scroll-mt-32 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+          <p className="text-sm font-semibold tracking-[0.18em] text-sky-700">LATEST NEWS</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight">Announcements</h2>
+          <div className="mt-6 divide-y divide-slate-200">
+            {latestNews.map((item) => (
+              <article key={item.title} className="py-5 first:pt-0 last:pb-0">
+                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-2 leading-relaxed text-slate-700">
+                  {item.bodyBefore}
+                  {item.link ? (
+                    <a
+                      href={item.link.href}
+                      target={item.link.href.startsWith("mailto:") ? undefined : "_blank"}
+                      rel={item.link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                      className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+                    >
+                      {item.link.label}
+                    </a>
+                  ) : null}
+                  {item.bodyAfter}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <p className="text-sm font-semibold tracking-[0.18em] text-sky-700">ICSC 2026 INTRODUCTION</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight">Advancing Social Computing Through Data and Theory</h2>
           <p className="mt-5 max-w-5xl text-slate-700">
@@ -68,18 +94,19 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="registration" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
           <p className="mt-4 max-w-5xl text-slate-600">
-            Registration opens soon. We are anticipating that, subject to sponorship, the conference registration fees
-            will be £150 for students, and £200 for all other registrants (they may end up being slightly lower). We
-            will likely be able to offer a very small number of discounted rates (£75/£100) upon application; please get
-            in contact with us as appropriate at{" "}
+            Registration is open now. The conference registration fees will be £150 for students, and £200 for all
+            other registrants. Pre-conference workshop registration is expected to cost £150. A conference dinner
+            (3rd September, 2026) has been confirmed with Nuffield College, and is entirely optional. This dinner rate
+            is heavily subsidized, thanks to sponsors at the College, and will cost £30. Thanks to the generosity of
+            Nuffield College, we will be able to offer ten bursaries of up to £100 for either conference registration
+            or workshop attendance; please get in contact with us as appropriate at{" "}
             <a
               href="mailto:icsc26@demography.ox.ac.uk"
               className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
             >
               icsc26@demography.ox.ac.uk
             </a>
-            . A conference dinner (3rd September, 2026) has been confirmed with Nuffield College, and is entirely
-            optional.
+            .
           </p>
           <a
             href="https://www.oxforduniversitystores.co.uk/conferences-and-events/nuffield-department-of-population-health/events/international-conference-on-social-computing"
@@ -94,17 +121,28 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="workshops" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Pre-conference Workshops</h2>
           <p className="mt-4 leading-relaxed text-slate-600">
-            Final workshop details will be published here soon. We anticipate that this will involve workshops on:
+            Final workshop details will be published here soon. We anticipate that the programme will include workshops
+            on:
           </p>
-          <ul className="mt-6 space-y-3 text-slate-700">
-            <li>&bull; Transformer Architectures (4 hours)</li>
-            <li>&bull; Sequence Analysis (1 hour)</li>
-            <li>&bull; Multiverse Analysis (1 hour)</li>
-            <li>&bull; Scientometrics (1 hour)</li>
+          <ul className="mt-6 list-disc space-y-3 pl-6 text-slate-700">
+            {preConferenceWorkshops.map((workshop) => (
+              <li key={workshop.title}>
+                <span className="font-medium">{workshop.title}</span> ({workshop.duration}, led by{" "}
+                <a
+                  href={workshop.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+                >
+                  {workshop.leader}
+                </a>
+                )
+              </li>
+            ))}
           </ul>
           <p className="mt-8 leading-relaxed text-slate-600">
-            This workshop is aimed at early career researchers, and is expected to cost £150. We will again
-            hopefully be able to subsidize this cost for a small number of students.
+            The workshop programme is aimed at early career researchers and is expected to cost £150. We hope to
+            subsidize this cost for a small number of students.
           </p>
         </section>
 
