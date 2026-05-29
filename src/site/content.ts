@@ -8,11 +8,67 @@ export const tracks = [
 ];
 
 export const deadlines = [
-  { label: "Paper Submission", date: "23:59 GMT on June 1st, 2026" },
+  { label: "Paper Submission", date: "23:59 BST on June 1st, 2026" },
   { label: "Notification", date: "June 22nd, 2026" },
   { label: "Camera Ready", date: "August 17th, 2026" },
   { label: "Pre-Conference Workshop", date: "September 2nd, 2026" },
   { label: "Conference", date: "September 3rd-4th, 2026" }
+];
+
+export const preConferenceWorkshops = [
+  {
+    title: "Transformer Architectures",
+    duration: "4 hours",
+    leader: "Germans Savcisens",
+    href: "https://savcisens.com/"
+  },
+  {
+    title: "Sequence Analysis",
+    duration: "1 hour",
+    leader: "Yuqi Liang",
+    href: "https://www.yuqi-liang.tech/"
+  },
+  {
+    title: "Multiverse Analysis",
+    duration: "1 hour",
+    leader: "Daniel Valdenegro",
+    href: "http://robustipy.github.io/"
+  },
+  {
+    title: "Scientometrics",
+    duration: "1 hour",
+    leader: "Charlie Rahal",
+    href: "http://crahal.com/"
+  }
+];
+
+export const latestNews = [
+  {
+    title: "Transformer workshop lead confirmed",
+    bodyBefore: "We are super excited to announce that ",
+    link: {
+      label: "Germans Savcisens",
+      href: "https://savcisens.com/"
+    },
+    bodyAfter:
+      " has agreed to lead the main part of our pre-conference workshop on applications of transformer architecture for social science and life course research."
+  },
+  {
+    title: "Bursaries available",
+    bodyBefore:
+      "We are currently offering ten bursaries of £100 as a reduction in either pre-conference workshop fees or conference registration for doctoral candidates or early career researchers: please email ",
+    link: {
+      label: "icsc26@demography.ox.ac.uk",
+      href: "mailto:icsc26@demography.ox.ac.uk"
+    },
+    bodyAfter: " for further details."
+  },
+  {
+    title: "Call for Papers deadline extended",
+    bodyBefore:
+      "The Call for Papers deadline has been extended. The new deadline is set to be 1st June 2026, at 23:59 BST.",
+    bodyAfter: ""
+  }
 ];
 
 export const researchTopics = [
@@ -38,6 +94,11 @@ export const snapshotItems = [
 ];
 
 export const quickActions = [
+  {
+    href: "#announcements",
+    title: "Announcements",
+    text: "Read the latest conference updates and announcements."
+  },
   {
     href: "#registration",
     title: "Registration",
