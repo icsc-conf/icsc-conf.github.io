@@ -1,2 +1,11 @@
 node_modules
 .DS_Store
+_site
+.pnpm-store
+/index.html
+/site.css
+/about.html
+/past-conferences.html
+/2026/*.html
+/2026/assets/
+/2026/ICSC_flyers.zip

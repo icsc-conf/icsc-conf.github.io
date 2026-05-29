@@ -1,0 +1,30 @@
+name: Guard generated files
+
+on:
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reject direct edits to generated files
+        run: |
+          changed_files="$(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}")"
+          generated_files="$(printf '%s\n' "$changed_files" | grep -E '^(index\.html|site\.css|about\.html|past-conferences\.html|2026/[^/]+\.html|2026/assets/|2026/ICSC_flyers\.zip|20(1[6-9]|2[0-5])/).*' || true)"
+
+          if [ -n "$generated_files" ]; then
+            echo "These files are generated, deployed from src/, or belong under past_conferences/ and must not be edited here:"
+            printf '%s\n' "$generated_files"
+            echo
+            echo "Edit src/ instead. The Pages deployment workflow will generate the published files."
+            exit 1
+          fi

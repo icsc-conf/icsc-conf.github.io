@@ -135,42 +135,42 @@ export const history = [
     title: "Conference on Online Social Behaviour",
     date: "June 10-11, 2016",
     venue: "UChicago Center in Beijing, China",
-    href: "../2016/index.html"
+    href: "past_conferences/2016/index.html"
   },
   {
     year: "2017",
     title: "Conference on Online Social Behaviour",
     date: "May 30-June 4, 2017",
     venue: "Beijing International Convention Center, Beijing, China",
-    href: "../2017/index.html"
+    href: "past_conferences/2017/index.html"
   },
   {
     year: "2018",
     title: "Conference on Online Social Behaviour",
     date: "November 3, 2018",
     venue: "Jin Chun Yuan Hotel, Beijing, China",
-    href: "../2018/index.html"
+    href: "past_conferences/2018/index.html"
   },
   {
     year: "2019",
     title: "International Conference on Social Computing",
     date: "August 26-27, 2019",
     venue: "Tsinghua University, Beijing, China",
-    href: "../2019/index.html"
+    href: "past_conferences/2019/index.html"
   },
   {
     year: "2020",
     title: "International Conference on Social Computing",
     date: "December 14-15, 2020",
     venue: "Hybrid (Beijing and online)",
-    href: "../2020/index.html"
+    href: "past_conferences/2020/index.html"
   },
   {
     year: "2021",
     title: "International Conference on Social Computing",
     date: "December 10-11, 2021",
     venue: "Hybrid (Beijing and online)",
-    href: "../2021/index.html"
+    href: "past_conferences/2021/index.html"
   },
   {
     year: "2022",
@@ -184,21 +184,21 @@ export const history = [
     title: "International Conference on Social Computing",
     date: "September 2-3, 2023",
     venue: "Tsinghua University area, Beijing, China",
-    href: "../2023/index.html"
+    href: "past_conferences/2023/index.html"
   },
   {
     year: "2024",
     title: "International Conference on Social Computing",
     date: "2024 edition",
     venue: "Hong Kong University of Science and Technology (Guangzhou), China",
-    href: "../2024/index.html"
+    href: "past_conferences/2024/index.html"
   },
   {
     year: "2025",
     title: "International Conference on Social Computing",
     date: "December 12-13, 2025",
     venue: "Fudan University, Shanghai, China",
-    href: "../2025/index.html"
+    href: "past_conferences/2025/index.html"
   }
 ];
 
@@ -209,80 +209,114 @@ export const organizingCommittee = [
       "JarDer Lou, Tsinghua University",
       "James Evans, University of Chicago",
       "Xiaoming Fu, University of Göttingen",
-      "Charles Rahal, University of Oxford"
+      "Charles Rahal, University of Oxford",
+      "Ridhi Kashyap, University of Oxford"
     ]
   },
   {
-    title: "Program Committee",
+    title: "Senior TPC Members",
     members: [
-      "Charles Rahal, University of Oxford, United Kingdom",
+      "Charles Rahal, University of Oxford",
       "Daniel Romero, University of Michigan",
-      "Adel Daoud, Linköping University",
-      "Mengying Zhou, Shanghai University of Finance and Economics."
+      "Adel Daoud, Institute of Analytical Sociology at Linköping University",
+      "Mengying Zhou, Shanghai University of Finance and Economics"
     ]
+  },
+  {
+    title: "TPC Members",
+    members: [
+      "Jiani Yan, University of Oxford",
+      "Mingyue Liu, University of Oxford",
+      "Daniel Valdenegro Ibarra, University of Oxford",
+      "Aparna Ananthasubramaniam, University of Michigan",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
+      "Miriam Schirmer, Harvard Business School",
+      "Wei Ai, University of Maryland, College Park",
+      "Hao Peng, City University of Hong Kong",
+      "Savvas Zannettou, TU Delft",
+      "Henry Kudzanai Dambanemuya, The University of Chicago",
+      "Harshith N Srivatsa, Wood Group",
+      "Pu Zhang, Hong Kong University of Science and Technology (Guangzhou)",
+      "Bo Liu, Southeast University",
+      "Aleksandar Stanković, University of Novi Sad",
+      "Roy Ka-Wei Lee, Singapore University of Technology and Design",
+      "Wenzhong Li, Nanjing University",
+      "Zixi Chen, NYU Shanghai",
+      "Yong-Feng Ge, Victoria University",
+      "Hua Wang, Victoria University",
+      "Xiu-Xiu Zhan, Hangzhou Normal University",
+      "Shihan Lin, University of Michigan",
+      "Fei Hao, Shaanxi Normal University",
+      "Xuejie Ding, The University of Hong Kong",
+      "Yang Chen, Fudan University",
+      "Huilian Sophie Qiu, Northwestern University",
+      "Zike Zhang, Zhejiang University"
+    ]
+  },
+  {
+    title: "Poster Co-Chairs",
+    members: ["TBD"]
   },
   {
     title: "Financial Chairs",
     members: [
-      "Yuqi Liang, University of Oxford, United Kingdom",
-      "Xuejie Ding, University of Hong Kong, China",
-      "Ava Keeling, University of Oxford, United Kingdom",
-      "Jan Meyerhoff, Leibniz Universität Hannover, Germany"
+      "Yuqi Liang, University of Oxford",
+      "Xuejie Ding, The University of Hong Kong",
+      "Ava Keeling, University of Oxford",
+      "Jan Meyerhoff, Leibniz Universität Hannover"
     ]
   },
   {
     title: "Registration Chair",
-    members: ["TBD"]
+    members: ["Aarushi Sharma, University of St. Andrews"]
   },
   {
     title: "Publicity Co-Chairs",
     members: [
-      "Chenxi Li, University of Oxford, United Kingdom",
-      "Adel Daoud, Linköping University, Sweden",
-      "Zerui Tian, University of Oxford, United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+      "Chenxi Li, University of Oxford",
+      "Ekaterina Degtiareva, University of Oxford",
+      "Anda-Raluca Epure, University of Oxford",
+      "Zerui Tian, University of Oxford",
+      "Panzirui Zhang, Sichuan University (SCU)"
     ]
   },
   {
     title: "Publication Chair",
-    members: [
-      "Mengying Zhou, Shanghai University of Finance and Economics, China",
-      "Xiu-Xiu Zhan, Hangzhou Normal University, China"
-    ]
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
     title: "Website Chairs",
     members: [
-      "Mengying Zhou, Shanghai University of Finance and Economics, China",
-      "Bo Zhao, Xi'an Jiaotong-Liverpool University, China and United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, Unted Kingdom"
+      "Mengying Zhou, Shanghai University of Finance and Economics",
+      "Bo Zhao, Xi'an Jiaotong-Liverpool University",
+      "Anda-Raluca Epure, University of Oxford"
     ]
   },
   {
     title: "Workshops Chair",
-    members: ["Zerui Tian, University of Oxford, United Kingdom"]
+    members: ["Zerui Tian, University of Oxford"]
   },
   {
     title: "Accessibility Chair",
-    members: ["Jan Meyerhoff, Leibniz Universität Hannover, Germany"]
+    members: ["Jan Meyerhoff, Leibniz Universität Hannover"]
   },
   {
     title: "Proceedings Chair",
-    members: ["Mengying Zhou, Shanghai University of Finance and Economics, China"]
+    members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
     title: "Liaison Co-Chairs",
     members: [
-      "Daniel Valdenegro, University of Oxford, United Kingdom",
-      "Jiani Yan, University of Oxford, United Kingdom",
-      "Linda Li, University College London, United Kingdom",
-      "Ava Keeling, University of Oxford, United Kingdom",
-      "Anda-Raluca Epure, University of Oxford, United Kingdom"
+      "Daniel Valdenegro, University of Oxford",
+      "Jiani Yan, University of Oxford",
+      "Linda Li, London School of Economics and Political Science",
+      "Ava Keeling, University of Oxford",
+      "Anda-Raluca Epure, University of Oxford"
     ]
   },
   {
     title: "Swag Chair",
-    members: ["Luyin Zhang, Princeton University, United States"]
+    members: ["Luyin Zhang, Princeton University"]
   },
 ];
 

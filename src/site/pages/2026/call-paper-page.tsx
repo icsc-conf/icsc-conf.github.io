@@ -59,7 +59,7 @@ export function ConferenceCallPaperPage({ paths }: { paths: SitePaths }) {
           <p className="mt-4 text-slate-700">
             A media pack announcing the call for papers can{" "}
             <a
-              href="ICSC_flyers.zip"
+              href="../assets/2026/ICSC_flyers.zip"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-sky-700 transition hover:text-sky-900"
