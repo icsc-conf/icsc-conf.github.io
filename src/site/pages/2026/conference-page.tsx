@@ -1,6 +1,6 @@
 import React from "react";
 import { SiteShell, type SitePaths } from "../../components";
-import { deadlines, latestNews, preConferenceWorkshops, quickActions, tracks } from "../../content";
+import { deadlines, latestNews, preConferenceWorkshopSchedule, quickActions, tracks } from "../../content";
 
 export function Conference2026Page({ paths }: { paths: SitePaths }) {
   return (
@@ -93,20 +93,22 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
 
         <section id="registration" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
+          <div className="mt-5 rounded-xl border border-amber-300 bg-amber-50 p-5 text-amber-950">
+            <p>
+              <strong>Final deadline for registrations: 7th August 2026</strong>
+            </p>
+            <p className="mt-1 text-sm leading-relaxed">
+              This deadline is firm. Late registrations and exceptions will not be possible.
+            </p>
+          </div>
           <p className="mt-4 max-w-5xl text-slate-600">
             Registration is open now. The conference registration fees will be £150 for students, and £200 for all
-            other registrants. Pre-conference workshop registration is expected to cost £150. A conference dinner
+            other registrants. Pre-conference workshop registration costs £100. A conference dinner
             (3rd September, 2026) has been confirmed with Nuffield College, and is entirely optional. This dinner rate
-            is heavily subsidized, thanks to sponsors at the College, and will cost £30. Thanks to the generosity of
-            Nuffield College, we will be able to offer ten bursaries of up to £100 for either conference registration
-            or workshop attendance; please get in contact with us as appropriate at{" "}
-            <a
-              href="mailto:icsc26@demography.ox.ac.uk"
-              className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
-            >
-              icsc26@demography.ox.ac.uk
-            </a>
-            .
+            is heavily subsidized, thanks to sponsors at the College, and will cost £30.
+          </p>
+          <p className="mt-4 max-w-5xl text-slate-600">
+            All ICSC 2026 bursaries have now been allocated. We are no longer accepting bursary applications.
           </p>
           <a
             href="https://www.oxforduniversitystores.co.uk/conferences-and-events/nuffield-department-of-population-health/events/international-conference-on-social-computing"
@@ -121,28 +123,39 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
         <section id="workshops" className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight">Pre-conference Workshops</h2>
           <p className="mt-4 leading-relaxed text-slate-600">
-            Final workshop details will be published here soon. We anticipate that the programme will include workshops
-            on:
+            The pre-conference taught workshop will take place on 2nd September 2026. The confirmed schedule is:
           </p>
-          <ul className="mt-6 list-disc space-y-3 pl-6 text-slate-700">
-            {preConferenceWorkshops.map((workshop) => (
-              <li key={workshop.title}>
-                <span className="font-medium">{workshop.title}</span> ({workshop.duration}, led by{" "}
-                <a
-                  href={workshop.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
-                >
-                  {workshop.leader}
-                </a>
-                )
-              </li>
+          <div className="mt-6 overflow-hidden rounded-xl border border-slate-200">
+            {preConferenceWorkshopSchedule.map((item) => (
+              <div
+                key={`${item.time}-${item.title}`}
+                className={`grid gap-2 border-b border-slate-200 px-5 py-4 last:border-b-0 sm:grid-cols-[8rem_1fr] ${
+                  item.type === "break" ? "bg-slate-50" : "bg-white"
+                }`}
+              >
+                <p className="font-semibold text-sky-800">{item.time}</p>
+                {item.type === "break" ? (
+                  <p className="font-medium text-slate-600">{item.title}</p>
+                ) : (
+                  <p className="text-slate-700">
+                    <span className="font-medium text-slate-900">{item.title}</span> ({item.duration}, led by{" "}
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+                    >
+                      {item.leader}
+                    </a>
+                    )
+                  </p>
+                )}
+              </div>
             ))}
-          </ul>
+          </div>
           <p className="mt-8 leading-relaxed text-slate-600">
-            The workshop programme is aimed at early career researchers and is expected to cost £150. We hope to
-            subsidize this cost for a small number of students.
+            The workshop programme is aimed at early career researchers and costs £100. All available
+            bursaries have now been allocated.
           </p>
         </section>
 

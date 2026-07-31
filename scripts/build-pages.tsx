@@ -7,6 +7,7 @@ import {
   Conference2026Page,
   ConferenceCallPaperPage,
   ConferenceCommitteePage,
+  ConferenceSchedulePage,
   ConferenceSponsorsPage,
   PastConferencesPage,
   RootLandingPage
@@ -152,6 +153,13 @@ const pages: PageSpec[] = [
     description: "Organizing committee for ICSC 2026.",
     cssHref: "../site.css",
     render: () => <ConferenceCommitteePage paths={conferencePaths} />
+  },
+  {
+    outputPath: "2026/schedule.html",
+    title: "ICSC 2026 Schedule",
+    description: "Schedule for ICSC 2026.",
+    cssHref: "../site.css",
+    render: () => <ConferenceSchedulePage paths={conferencePaths} />
   },
   {
     outputPath: "2026/sponsors.html",

@@ -23,11 +23,29 @@ export function ConferenceSponsorsPage({ paths }: { paths: SitePaths }) {
               </li>
               <li className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-5">
                 <img
-                  src="../images/sponsors/ecut.png"
-                  alt="East China University of Technology logo"
+                  src="../images/sponsors/ECUST%20logo.jpg"
+                  alt="East China University of Science and Technology logo"
                   className="max-h-16 w-auto"
                 />
                 <div className="mt-4 text-lg font-semibold text-slate-900">East China University of Science and Technology</div>
+              </li>
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-5">
+                <img
+                  src="../images/sponsors/nuffield-college.png"
+                  alt="Nuffield College logo"
+                  className="max-h-16 w-auto"
+                />
+                <div className="mt-4 text-lg font-semibold text-slate-900">Nuffield College</div>
+              </li>
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-5">
+                <img
+                  src="../images/sponsors/leverhulme-centre-demographic-science.png"
+                  alt="Leverhulme Centre for Demographic Science logo"
+                  className="max-h-16 w-auto"
+                />
+                <div className="mt-4 text-lg font-semibold text-slate-900">
+                  Leverhulme Centre for Demographic Science
+                </div>
               </li>
             </ul>
           </div>

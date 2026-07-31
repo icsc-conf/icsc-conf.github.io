@@ -10,39 +10,87 @@ export const tracks = [
 export const deadlines = [
   { label: "Paper Submission", date: "23:59 BST on June 1st, 2026" },
   { label: "Notification", date: "June 22nd, 2026" },
+  { label: "Final Registration", date: "7th August 2026 (no exceptions)" },
   { label: "Camera Ready", date: "August 17th, 2026" },
   { label: "Pre-Conference Workshop", date: "September 2nd, 2026" },
   { label: "Conference", date: "September 3rd-4th, 2026" }
 ];
 
-export const preConferenceWorkshops = [
+export type WorkshopScheduleItem =
+  | {
+      type: "session";
+      time: string;
+      title: string;
+      duration: string;
+      leader: string;
+      href: string;
+    }
+  | {
+      type: "break";
+      time: string;
+      title: string;
+    };
+
+export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
   {
+    type: "session",
+    time: "9am–1pm",
     title: "Transformer Architectures",
     duration: "4 hours",
     leader: "Germans Savcisens",
     href: "https://savcisens.com/"
   },
   {
+    type: "break",
+    time: "1–2pm",
+    title: "Lunch break"
+  },
+  {
+    type: "session",
+    time: "2–3pm",
+    title: "Non-visual data science and accessibility of scientific research outputs",
+    duration: "1 hour",
+    leader: "Jan Meyerhoff-Liang",
+    href: "https://www.linkedin.com/in/jan-meyerhoff-liang-97999a170/?skipRedirect=true&originalSubdomain=ie"
+  },
+  {
+    type: "session",
+    time: "3–4pm",
     title: "Sequence Analysis",
     duration: "1 hour",
     leader: "Yuqi Liang",
     href: "https://www.yuqi-liang.tech/"
   },
   {
-    title: "Multiverse Analysis",
-    duration: "1 hour",
-    leader: "Daniel Valdenegro",
-    href: "http://robustipy.github.io/"
+    type: "break",
+    time: "4–4:15pm",
+    title: "Break"
   },
   {
+    type: "session",
+    time: "4:15–5:15pm",
     title: "Scientometrics",
     duration: "1 hour",
     leader: "Charlie Rahal",
     href: "http://crahal.com/"
+  },
+  {
+    type: "session",
+    time: "5:15–6:15pm",
+    title: "Multiverse Analysis",
+    duration: "1 hour",
+    leader: "Daniel Valdenegro",
+    href: "http://robustipy.github.io/"
   }
 ];
 
 export const latestNews = [
+  {
+    title: "Final registration deadline: 7th August",
+    bodyBefore:
+      "The final deadline to register for ICSC 2026 is 7th August 2026. This deadline is firm; late registrations and exceptions will not be possible.",
+    bodyAfter: ""
+  },
   {
     title: "Transformer workshop lead confirmed",
     bodyBefore: "We are super excited to announce that ",
@@ -54,14 +102,10 @@ export const latestNews = [
       " has agreed to lead the main part of our pre-conference workshop on applications of transformer architecture for social science and life course research."
   },
   {
-    title: "Bursaries available",
+    title: "Bursaries have now been allocated",
     bodyBefore:
-      "We are currently offering ten bursaries of £100 as a reduction in either pre-conference workshop fees or conference registration for doctoral candidates or early career researchers: please email ",
-    link: {
-      label: "icsc26@demography.ox.ac.uk",
-      href: "mailto:icsc26@demography.ox.ac.uk"
-    },
-    bodyAfter: " for further details."
+      "All ICSC 2026 bursaries have now been allocated. We are no longer accepting bursary applications.",
+    bodyAfter: ""
   },
   {
     title: "Call for Papers deadline extended",
@@ -102,7 +146,7 @@ export const quickActions = [
   {
     href: "#registration",
     title: "Registration",
-    text: "Register to attend ICSC 2026 in Oxford."
+    text: "Register to attend ICSC 2026 in Oxford by 7th August."
   },
   {
     href: "call.html",
@@ -110,7 +154,7 @@ export const quickActions = [
     text: "Review the paper submission scope, guidelines, and dates."
   },
   {
-    href: "https://icsc-conf.github.io/2026/oc.html",
+    href: "oc.html",
     title: "Committee",
     text: "See the organizing and program committee for ICSC 2026."
   },
@@ -118,6 +162,11 @@ export const quickActions = [
     href: "sponsors.html",
     title: "Information for Sponsors",
     text: "View sponsorship information for ICSC 2026."
+  },
+  {
+    href: "schedule.html",
+    title: "Schedule",
+    text: "View information about the ICSC 2026 conference schedule."
   }
 ];
 
@@ -255,7 +304,7 @@ export const organizingCommittee = [
   },
   {
     title: "Poster Co-Chairs",
-    members: ["TBD"]
+    members: ["Ava Keeling, University of Oxford", "Daniel Valdenegro, University of Oxford"]
   },
   {
     title: "Financial Chairs",

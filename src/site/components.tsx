@@ -187,6 +187,7 @@ export function SiteFooter({
     { href: paths.conferenceHref.replace("index.html", "call.html"), label: "Call for Papers" },
     { href: `${paths.conferenceHref}#programme`, label: "Programme" },
     { href: paths.conferenceHref.replace("index.html", "oc.html"), label: "Committee" },
+    { href: paths.conferenceHref.replace("index.html", "schedule.html"), label: "Schedule" },
     { href: paths.conferenceHref.replace("index.html", "sponsors.html"), label: "Information for Sponsors" }
   ];
 

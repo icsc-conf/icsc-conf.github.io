@@ -17,6 +17,7 @@ src/
         conference-page.tsx          source for /2026/index.html
         call-paper-page.tsx          source for /2026/call.html
         committee-page.tsx           source for /2026/oc.html
+        schedule-page.tsx            source for /2026/schedule.html
         sponsors-page.tsx            source for /2026/sponsors.html
     components.tsx                   shared layout, header, footer, paths
     content.ts                       shared conference text, dates, links, lists
@@ -45,6 +46,7 @@ scripts/
 | 2026 main page `/2026/index.html` | `src/site/pages/2026/conference-page.tsx` |
 | 2026 call for papers `/2026/call.html` | `src/site/pages/2026/call-paper-page.tsx` |
 | 2026 committee `/2026/oc.html` | `src/site/pages/2026/committee-page.tsx` |
+| 2026 schedule `/2026/schedule.html` | `src/site/pages/2026/schedule-page.tsx` |
 | 2026 sponsors `/2026/sponsors.html` | `src/site/pages/2026/sponsors-page.tsx` |
 | Shared header, footer, buttons, page shell | `src/site/components.tsx` |
 | Site-wide generated CSS | `src/styles/site.css` |
