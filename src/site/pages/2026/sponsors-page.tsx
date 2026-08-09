@@ -47,6 +47,14 @@ export function ConferenceSponsorsPage({ paths }: { paths: SitePaths }) {
                   Leverhulme Centre for Demographic Science
                 </div>
               </li>
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-5">
+                <img
+                  src="../images/sponsors/Silta_Hauptlogo_V2_Farbig_RGB.png"
+                  alt="Silta logo"
+                  className="max-h-16 w-auto"
+                />
+                <div className="mt-4 text-lg font-semibold text-slate-900">Silta</div>
+              </li>
             </ul>
           </div>
           <div className="mt-8 border-t border-slate-200 pt-6">
