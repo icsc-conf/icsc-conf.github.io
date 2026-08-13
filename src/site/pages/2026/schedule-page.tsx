@@ -1,5 +1,5 @@
 import { SiteShell, type SitePaths } from "../../components";
-import { preConferenceWorkshopSchedule } from "../../content";
+import { posterPresentations, preConferenceWorkshopSchedule } from "../../content";
 
 export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
   return (
@@ -146,10 +146,47 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
 
         <section className="mt-8 rounded-2xl border border-amber-300 bg-amber-50 p-8 shadow-sm md:p-10">
           <p className="text-sm font-semibold tracking-[0.18em] text-amber-800">3RD–4TH SEPTEMBER 2026</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-amber-950">Research Talks</h2>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-amber-950">Research Talks and Posters</h2>
           <p className="mt-4 text-lg leading-relaxed text-amber-950">
-            The scheduling of the research talks on 3rd and 4th September is still to be determined.
+            The schedule for research talks and poster sessions on 3rd and 4th September is currently being finalised.
           </p>
+
+          <div className="mt-8 overflow-hidden rounded-xl border border-amber-200 bg-white">
+            <div className="border-b border-amber-200 px-5 py-4">
+              <h3 className="text-xl font-semibold text-slate-900">Poster Presentations</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[42rem] border-collapse text-left">
+                <thead className="bg-amber-100 text-sm text-amber-950">
+                  <tr>
+                    <th scope="col" className="w-3/4 px-5 py-3 font-semibold">
+                      Paper Title
+                    </th>
+                    <th scope="col" className="w-1/4 px-5 py-3 font-semibold">
+                      Presenter
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                  {posterPresentations.map((poster) => (
+                    <tr key={poster.href} className="align-top even:bg-slate-50">
+                      <td className="px-5 py-4 leading-relaxed">
+                        <a
+                          href={poster.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+                        >
+                          {poster.title}
+                        </a>
+                      </td>
+                      <td className="px-5 py-4 leading-relaxed">{poster.presenter}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </section>
       </main>
     </SiteShell>

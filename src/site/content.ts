@@ -89,6 +89,102 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
   }
 ];
 
+export const posterPresentations = [
+  {
+    title: "Taking Out the Human Factor: Comparing Algorithmic Profiling Against Human Baseline",
+    presenter: "Max Kunaschk",
+    href: "https://openreview.net/forum?id=hoSsOOFhnI"
+  },
+  {
+    title: "The relationship between social order and crime in Nottingham, England",
+    presenter: "Fanqi Zeng",
+    href: "https://openreview.net/forum?id=a7K7nqfq31"
+  },
+  {
+    title: "Rethinking Parental Involvement in Disadvantaged Families: The Importance of Invitations",
+    presenter: "Xiaohang Feng",
+    href: "https://openreview.net/forum?id=69WDUfTGxr"
+  },
+  {
+    title: "Social Event Prediction via Temporal Knowledge Graph Learning",
+    presenter: "Sanglu Lu, Wentao Shi and Wenzhong Li",
+    href: "https://openreview.net/forum?id=3Dw7vPMhRy"
+  },
+  {
+    title:
+      "The Gendered Linguistic Geometry of Everyday Spaces in American English Discourse, 1900–2009: Domain-Conditional Feminization and the Asymmetric Emergence of Private Vocabulary",
+    presenter: "Wei Zhuang",
+    href: "https://openreview.net/forum?id=9o4QvesEIe"
+  },
+  {
+    title: "Simulated Contact, Real Empathy: Reducing Prejudice through Role-Play with AI Personas",
+    presenter: "Chris Wenzhong Cai",
+    href: "https://openreview.net/forum?id=dWrJ4bqiIM"
+  },
+  {
+    title: "Conversational Interventions Against Misinformation: Effects on Belief Change and Sharing Behavior",
+    presenter: "Basak Bozkurt",
+    href: "https://openreview.net/forum?id=HVtAZVyHuN"
+  },
+  {
+    title: "Scholars like any other? An inquiry into productivity and citations in the field of contemporary China studies",
+    presenter: "Xiaoguang Fan",
+    href: "https://openreview.net/forum?id=w1bUeBlZp3"
+  },
+  {
+    title: "Promotional Modifiers and Reviewer Attention: A Paired Noun-Level Analysis",
+    presenter: "Huilian Qiu",
+    href: "https://openreview.net/forum?id=PdFzNvMCLI"
+  },
+  {
+    title: "Skill Endowments and Status Formation in LLM Agent Networks",
+    presenter: "Yuanyi Zhen",
+    href: "https://openreview.net/forum?id=EqRcQEjqdK"
+  },
+  {
+    title:
+      "Ideological Divergence in UK Political News Across Election Periods and Political Crises (2015–2024): A Computational Topic Modelling Study",
+    presenter: "Iola Agbalaya-Mason",
+    href: "https://openreview.net/forum?id=i2a7X7ikva"
+  },
+  {
+    title:
+      "Making Low-Visibility Policies Discoverable: A Document-Embedding Approach to Inclusive Cross-Boundary Policy Comparison",
+    presenter: "Chenxi Lin",
+    href: "https://openreview.net/forum?id=Ndk4RFNtsL"
+  },
+  {
+    title: "Accessible Jupyter Notebook Output (AJNBO): A VS Code Extension for Screen-Reader-Based Review",
+    presenter: "Yuqi Liang and Jan Meyerhoff-Liang",
+    href: "https://openreview.net/forum?id=ah8JbGih1c"
+  },
+  {
+    title: "How AIGC Influences Audience Engagement in Chinese Museum Videos on Douyin?",
+    presenter: "Bo Zhao",
+    href: "https://openreview.net/forum?id=Ym5mjvCQtV"
+  },
+  {
+    title: "How Hostile Tone Shapes Science Communication",
+    presenter: "Miriam Schirmer",
+    href: "https://openreview.net/forum?id=JHksbDe6pt"
+  },
+  {
+    title: "Who Meets Whom: Income Stratification in Urban Co-Presence",
+    presenter: "Chen Zhong",
+    href: "https://openreview.net/forum?id=nBkYUy5Yiy"
+  },
+  {
+    title: "Beyond Localisation: Cultural Defaults and User Agency in Conversational AI",
+    presenter: "Yao Xiao",
+    href: "https://openreview.net/forum?id=3gEQa3lUcx"
+  },
+  {
+    title: "Using language models to measure the demand-based wage gap",
+    presenter: "Elodie Chervin",
+    href: "https://openreview.net/forum?id=yCvfcQ1WC5"
+  }
+];
+
 export const latestNews = [
   {
     title: "Final registration deadline: 7th August",
