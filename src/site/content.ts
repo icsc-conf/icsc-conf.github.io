@@ -33,6 +33,11 @@ export type WorkshopScheduleItem =
 
 export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
   {
+    type: "break",
+    time: "8:30–9am",
+    title: "Workshop registration in the foyer outside the lecture hall"
+  },
+  {
     type: "session",
     time: "9am–1pm",
     title: "Transformer Architectures",
@@ -255,7 +260,7 @@ export const organizingCommittee = [
   {
     title: "Steering Committee",
     members: [
-      "JarDer Lou, Tsinghua University",
+      "Jar-Der Luo, Tsinghua University",
       "James Evans, University of Chicago",
       "Xiaoming Fu, University of Göttingen",
       "Charles Rahal, University of Oxford",
