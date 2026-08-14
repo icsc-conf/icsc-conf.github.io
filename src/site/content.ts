@@ -231,7 +231,7 @@ export const snapshotItems = [
   { label: "Host City", value: "Oxford, UK" },
   { label: "Venue", value: "Nuffield College, University of Oxford" },
   { label: "Conference Dates", value: "September 2nd-4th 2026" },
-  { label: "Format", value: "In-person attendance" },
+  { label: "Format", value: "In-person attendance with limited online options" },
   {
     label: "Proceedings",
     value:
