@@ -10,7 +10,8 @@ export const tracks = [
 export const deadlines = [
   { label: "Paper Submission", date: "23:59 BST on June 1st, 2026" },
   { label: "Notification", date: "June 22nd, 2026" },
-  { label: "Final Registration", date: "7th August 2026 (no exceptions)" },
+  { label: "In-Person Registration", date: "Closed 7th August 2026" },
+  { label: "Online Registration", date: "Closes 1st September 2026" },
   { label: "Camera Ready", date: "August 17th, 2026" },
   { label: "Pre-Conference Workshop", date: "September 2nd, 2026" },
   { label: "Conference", date: "September 3rd-4th, 2026" }
@@ -187,9 +188,9 @@ export const posterPresentations = [
 
 export const latestNews = [
   {
-    title: "Final registration deadline: 7th August",
+    title: "Online registration open until 1st September",
     bodyBefore:
-      "The final deadline to register for ICSC 2026 is 7th August 2026. This deadline is firm; late registrations and exceptions will not be possible.",
+      "In-person registration for ICSC 2026 closed on 7th August 2026. Online registration remains open until 1st September 2026.",
     bodyAfter: ""
   },
   {
@@ -247,7 +248,7 @@ export const quickActions = [
   {
     href: "#registration",
     title: "Registration",
-    text: "Register to attend ICSC 2026 in Oxford by 7th August."
+    text: "In-person registration has closed; online registration remains open until 1st September."
   },
   {
     href: "call.html",
