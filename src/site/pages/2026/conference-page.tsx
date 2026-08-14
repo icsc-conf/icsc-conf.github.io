@@ -95,15 +95,15 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
           <h2 className="text-3xl font-semibold tracking-tight">Registration</h2>
           <div className="mt-5 rounded-xl border border-amber-300 bg-amber-50 p-5 text-amber-950">
             <p>
-              <strong>Final deadline for registrations: 7th August 2026</strong>
+              <strong>In-person registration closed on 7th August 2026.</strong>
             </p>
             <p className="mt-1 text-sm leading-relaxed">
-              This deadline is firm. Late registrations and exceptions will not be possible.
+              Online registration remains open until 1st September 2026.
             </p>
           </div>
           <p className="mt-4 max-w-5xl text-slate-600">
-            Registration is open now. The conference registration fees will be £150 for students, and £200 for all
-            other registrants. Pre-conference workshop registration costs £100. A conference dinner
+            Online registration is open now. The conference registration fees will be £150 for students, and £200 for
+            all other registrants. Pre-conference workshop registration costs £100. A conference dinner
             (3rd September, 2026) has been confirmed with Nuffield College, and is entirely optional. This dinner rate
             is heavily subsidized, thanks to sponsors at the College, and will cost £30.
           </p>

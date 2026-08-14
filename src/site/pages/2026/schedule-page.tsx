@@ -144,6 +144,33 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
           </p>
         </section>
 
+        <section className="mt-8 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 shadow-sm md:p-10">
+          <p className="text-sm font-semibold tracking-[0.18em] text-indigo-800">2ND SEPTEMBER 2026</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-indigo-950">Editorial Board Meetings</h2>
+          <div className="mt-6 overflow-hidden rounded-xl border border-indigo-200 bg-white">
+            <div className="grid gap-3 border-b border-indigo-100 px-5 py-5 sm:grid-cols-[8rem_1fr]">
+              <p className="font-semibold text-indigo-800">2–3pm</p>
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900">Journal of Social Computing Editorial Board Meeting</h3>
+                <p className="mt-1 text-slate-600">Nuffield College Chester Room · Online option available</p>
+              </div>
+            </div>
+            <div className="grid gap-3 px-5 py-5 sm:grid-cols-[8rem_1fr]">
+              <p className="font-semibold text-indigo-800">3–4pm</p>
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900">
+                  ACM Transactions in Social Computing Editorial Board Meeting
+                </h3>
+                <p className="mt-1 text-slate-600">Nuffield College Chester Room · Online option available</p>
+              </div>
+            </div>
+          </div>
+          <p className="mt-5 leading-relaxed text-indigo-950">
+            Both meetings offer online participation. If you expected an invitation but have not received one, please
+            contact the organisers for further details.
+          </p>
+        </section>
+
         <section className="mt-8 rounded-2xl border border-amber-300 bg-amber-50 p-8 shadow-sm md:p-10">
           <p className="text-sm font-semibold tracking-[0.18em] text-amber-800">3RD–4TH SEPTEMBER 2026</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-amber-950">Research Talks and Posters</h2>
