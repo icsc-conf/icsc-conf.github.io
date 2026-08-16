@@ -34,6 +34,49 @@ body {
   font-family: var(--font-sans-base);
 }
 
+:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px #075985;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  [data-site-chrome="true"],
+  [data-print-hidden="true"] {
+    display: none !important;
+  }
+
+  body,
+  main {
+    background: white !important;
+  }
+
+  [data-schedule-card="true"] {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  [data-schedule-heading="true"],
+  [data-schedule-heading="true"] * {
+    border-color: #94a3b8 !important;
+    background: white !important;
+    color: #0f172a !important;
+  }
+}
+
 .scientific-grid {
   background-image:
     linear-gradient(to right, rgb(148 163 184 / 0.12) 1px, transparent 1px),

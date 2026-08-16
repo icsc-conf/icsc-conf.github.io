@@ -25,68 +25,93 @@ export type WorkshopScheduleItem =
       duration: string;
       leader: string;
       href: string;
+      room: string;
     }
   | {
       type: "break";
       time: string;
       title: string;
+      room: string;
     };
 
 export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
   {
     type: "break",
-    time: "8:30–9am",
-    title: "Workshop registration in the foyer outside the lecture hall"
+    time: "08:30–09:00",
+    title: "Workshop registration",
+    room: "Main Lecture Theatre Foyer"
   },
   {
     type: "session",
-    time: "9am–1pm",
-    title: "Transformer Architectures",
-    duration: "4 hours",
+    time: "09:00–10:45",
+    title: "Transformer Architectures I",
+    duration: "1 hour 45 minutes",
     leader: "Germans Savcisens",
-    href: "https://savcisens.com/"
+    href: "https://savcisens.com/",
+    room: "Main Lecture Theatre"
   },
   {
     type: "break",
-    time: "1–2pm",
-    title: "Lunch break"
+    time: "10:45–11:00",
+    title: "Break",
+    room: "Main Lecture Theatre Foyer"
   },
   {
     type: "session",
-    time: "2–3pm",
+    time: "11:00–13:00",
+    title: "Transformer Architectures II",
+    duration: "2 hours",
+    leader: "Germans Savcisens",
+    href: "https://savcisens.com/",
+    room: "Main Lecture Theatre"
+  },
+  {
+    type: "break",
+    time: "13:00–14:00",
+    title: "Lunch",
+    room: "Junior Common Room"
+  },
+  {
+    type: "session",
+    time: "14:00–15:00",
     title: "Non-visual data science and accessibility of scientific research outputs",
     duration: "1 hour",
-    leader: "Jan Meyerhoff-Liang",
-    href: "https://www.linkedin.com/in/jan-meyerhoff-liang-97999a170/?skipRedirect=true&originalSubdomain=ie"
+    leader: "Sophie Johanning (Silta)",
+    href: "https://www.silta.ai/",
+    room: "Main Lecture Theatre"
   },
   {
     type: "session",
-    time: "3–4pm",
-    title: "Sequence Analysis",
+    time: "15:00–16:00",
+    title: "Sequence Analysis and Sequenzo",
     duration: "1 hour",
     leader: "Yuqi Liang",
-    href: "https://www.yuqi-liang.tech/"
+    href: "https://www.yuqi-liang.tech/",
+    room: "Main Lecture Theatre"
   },
   {
     type: "break",
-    time: "4–4:15pm",
-    title: "Break"
+    time: "16:00–16:15",
+    title: "Break",
+    room: "Main Lecture Theatre"
   },
   {
     type: "session",
-    time: "4:15–5:15pm",
-    title: "Scientometrics",
+    time: "16:15–17:15",
+    title: "An Introduction to OpenAlex",
     duration: "1 hour",
     leader: "Charlie Rahal",
-    href: "http://crahal.com/"
+    href: "https://crahal.com/",
+    room: "Main Lecture Theatre"
   },
   {
     type: "session",
-    time: "5:15–6:15pm",
-    title: "Multiverse Analysis",
+    time: "17:15–18:15",
+    title: "Multiverse Analysis with RobustiPy",
     duration: "1 hour",
     leader: "Daniel Valdenegro",
-    href: "http://robustipy.github.io/"
+    href: "https://robustipy.github.io/",
+    room: "Main Lecture Theatre"
   }
 ];
 

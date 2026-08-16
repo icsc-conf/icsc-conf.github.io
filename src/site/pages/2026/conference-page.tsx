@@ -135,7 +135,10 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
               >
                 <p className="font-semibold text-sky-800">{item.time}</p>
                 {item.type === "break" ? (
-                  <p className="font-medium text-slate-600">{item.title}</p>
+                  <div>
+                    <p className="font-medium text-slate-700">{item.title}</p>
+                    <p className="mt-1 text-sm text-slate-600">{item.room}</p>
+                  </div>
                 ) : (
                   <p className="text-slate-700">
                     <span className="font-medium text-slate-900">{item.title}</span> ({item.duration}, led by{" "}
@@ -147,7 +150,7 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
                     >
                       {item.leader}
                     </a>
-                    )
+                    )<span className="mt-1 block text-sm text-slate-600">{item.room}</span>
                   </p>
                 )}
               </div>

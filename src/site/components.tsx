@@ -108,8 +108,9 @@ export function AnnouncementBanner({
   className
 }: AnnouncementBannerProps) {
   return (
-    <section
-      aria-live="polite"
+    <aside
+      aria-label={badge}
+      data-site-chrome="true"
       className={`w-full border-y border-sky-400/45 bg-linear-to-r from-slate-950 via-blue-950 to-sky-900 shadow-[inset_0_1px_0_rgba(125,211,252,0.18)] ${className ?? ""}`}
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-6 py-3 lg:flex-row lg:items-center lg:justify-between lg:px-10">
@@ -131,7 +132,7 @@ export function AnnouncementBanner({
           </a>
         ) : null}
       </div>
-    </section>
+    </aside>
   );
 }
 
@@ -151,7 +152,7 @@ export function GlobalAnnouncement({ paths }: { paths: SitePaths }) {
 
 export function SiteHeader({ paths }: { paths: SitePaths }) {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header data-site-chrome="true" className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a href={paths.homeHref} className="flex items-center gap-3">
           <img
@@ -192,7 +193,7 @@ export function SiteFooter({
   ];
 
   return (
-    <footer id="contact" className="w-full border-t border-slate-800 bg-slate-950 text-slate-300">
+    <footer id="contact" data-site-chrome="true" className="w-full border-t border-slate-800 bg-slate-950 text-slate-300">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 lg:grid-cols-[1.6fr_1fr_1fr] lg:px-10">
         <div>
           <a href={paths.homeHref} className="inline-block">
@@ -228,7 +229,7 @@ export function SiteFooter({
           </ul>
         </div>
       </div>
-      <div className="w-full border-t border-slate-800/80 px-6 py-4 text-center text-xs text-slate-500">
+      <div className="w-full border-t border-slate-800/80 px-6 py-4 text-center text-xs text-slate-400">
         &copy; ICSC (International Conference on Social Computing) 2019 - 2026.
         <br />
         All rights reserved.
@@ -295,14 +296,24 @@ export function ConferenceAnnouncementHero({
 export function SiteShell({
   paths,
   children,
-  footerLinks
+  footerLinks,
+  skipToContentId
 }: {
   paths: SitePaths;
   children: ReactNode;
   footerLinks?: FooterLink[];
+  skipToContentId?: string;
 }) {
   return (
     <div className="min-h-screen bg-[var(--color-page)] text-slate-900">
+      {skipToContentId ? (
+        <a
+          href={`#${skipToContentId}`}
+          className="fixed top-3 left-3 z-50 -translate-y-24 rounded-md bg-slate-950 px-4 py-3 font-semibold text-white shadow-lg transition focus:translate-y-0"
+        >
+          Skip to programme
+        </a>
+      ) : null}
       <SiteHeader paths={paths} />
       <GlobalAnnouncement paths={paths} />
       {children}

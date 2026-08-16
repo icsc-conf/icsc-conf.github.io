@@ -156,8 +156,8 @@ const pages: PageSpec[] = [
   },
   {
     outputPath: "2026/schedule.html",
-    title: "ICSC 2026 Schedule",
-    description: "Schedule for ICSC 2026.",
+    title: "ICSC 2026 Conference Programme",
+    description: "Accessible three-day programme for ICSC 2026 at Nuffield College, University of Oxford.",
     cssHref: "../site.css",
     render: () => <ConferenceSchedulePage paths={conferencePaths} />
   },
