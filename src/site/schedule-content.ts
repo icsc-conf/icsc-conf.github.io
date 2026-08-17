@@ -76,10 +76,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
               { time: "10:20–10:40", title: "Title to be confirmed", presenters: "Jar-Der Luo" },
               {
                 time: "10:40–11:00",
-                title: "Understanding the Behavior of LLM-Driven Social Agents",
+                title: "Title to be confirmed",
                 presenters: "Xiaoming Fu"
               },
-              { time: "11:00–11:20", title: "Title to be confirmed", presenters: "Yang Chen" },
+              {
+                time: "11:00–11:20",
+                title: "Understanding the Behavior of LLM-Driven Social Agents",
+                presenters: "Yang Chen"
+              },
               {
                 time: "11:20–11:40",
                 title: "Social Event Prediction with Context-Adaptive Temporal Knowledge Graph Reasoning",
