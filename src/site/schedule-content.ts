@@ -191,8 +191,9 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "15:15–15:30",
-                title: "No View from Nowhere: Residential Calibration and the Aggregation of Urban Perception",
-                presenters: "Micol Morellini"
+                title: "Collaboration and Conflict in the Redditverse: Longitudinal Network Dynamics in Protest Communities",
+                presenters: "Janine Schröder",
+                onlineAudience: false
               }
             ]
           },
@@ -294,6 +295,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Are LLMs Cultural Amplifiers? Replicating Human Mate Preferences with Silicon Samples Across Six Countries",
                 presenters: "Yuqian Huang",
                 speakerOnline: true
+              },
+              {
+                time: "17:15–17:30",
+                title: "Mapping Reviewable Discretion in Access-to-Information Laws: A Social Computing Framework for Multilingual Legal Text Measurement",
+                presenters: "Shuaiyu Yang",
+                speakerOnline: true,
+                onlineAudience: false
               }
             ]
           },
@@ -323,6 +331,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "16:45–17:00",
                 title: "A Study on Adverse Childhood Experiences and Subjective Well-being of Chinese Adolescents Based on AI-Simulated Samples: The Mediating Role of Belongingness and the Moderating Role of Social Support",
                 presenters: "Jiahao Zhang, Wenbin Du and Zheng Zhou"
+              },
+              {
+                time: "17:00–17:15",
+                title: "Exploring Relational Structure in Language Model Representations",
+                presenters: "Mingyue Liu"
               }
             ]
           },
@@ -360,7 +373,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "thursday-transition-break",
             title: "Break before the evening programme",
             entries: [
-              { time: "17:15–17:45", title: "Break — no refreshments provided", kind: "break" }
+              { time: "17:30–17:45", title: "Break — no refreshments provided", kind: "break" }
             ]
           }
         ]
@@ -572,7 +585,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "15:15–15:30",
                 title: "Algorithmic Stratification via Ranking: AI Hiring Systems and the Reproduction of Social Inequality",
-                presenters: "Gabriel Pessanha"
+                presenters: "Gabriel Pessanha",
+                speakerOnline: true
               }
             ]
           },
@@ -587,11 +601,6 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "14:30–14:45",
                 title: "Deepfakes at the Media–Law Boundary: A Multilingual Thematic Analysis of Platformed News Discourse",
                 presenters: "Yidan Huang"
-              },
-              {
-                time: "14:45–15:00",
-                title: "Mapping Reviewable Discretion in Access-to-Information Laws: A Social Computing Framework for Multilingual Legal Text Measurement",
-                presenters: "Shuaiyu Yang"
               },
               {
                 time: "15:00–15:15",
@@ -619,8 +628,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "14:45–15:00",
-                title: "Collaboration and Conflict in the Redditverse: Longitudinal Network Dynamics in Protest Communities",
-                presenters: "Janine Schröder"
+                title: "No View from Nowhere: Residential Calibration and the Aggregation of Urban Perception",
+                presenters: "Micol Morellini"
               },
               {
                 time: "15:00–15:15",
@@ -689,8 +698,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "16:15–16:30",
-                title: "Perceived Documentation Status from Visual and Audio AI-Generated Cues: A Multimodal Conjoint Study",
-                presenters: "Carolina Coimbra Vieira"
+                title: "Beyond Retrieval: Incorporating Personality and Emotion into RAG-Based Conversational Agents",
+                presenters: "Qiang Duan, Yang Chen and Xiaoming Fu"
               },
               {
                 time: "16:30–16:45",
@@ -699,8 +708,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "16:45–17:00",
-                title: "Beyond Retrieval: Incorporating Personality and Emotion into RAG-Based Conversational Agents",
-                presenters: "Qiang Duan, Yang Chen and Xiaoming Fu"
+                title: "Perceived Documentation Status from Visual and Audio AI-Generated Cues: A Multimodal Conjoint Study",
+                presenters: "Carolina Coimbra Vieira"
               }
             ]
           },
@@ -721,9 +730,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "The Deviation Carries the Computation: Causal Surgery on Geometric Representations in Language Models",
                 presenters: "Aarushi Sharma"
               },
-              { time: "16:30–16:45", title: "Title to be confirmed", presenters: "Mingyue Liu" },
               {
-                time: "16:45–17:00",
+                time: "16:30–16:45",
                 title: "Asymmetric Affective Polarization in Elite and Public Discourse: Event-Time Evidence from the Black Lives Matter Uprising",
                 presenters: "Sylvia Dou"
               }
