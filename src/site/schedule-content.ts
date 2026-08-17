@@ -87,7 +87,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "12:05–12:25",
-                title: "Title to be confirmed",
+                title: "From Analysis to Simulation: Exploring Public Opinion, AIGC-Mediated Engagement, and Emergent Social Dynamics",
                 presenters: "Bo Zhao",
                 note: "Sponsored keynote talk from East China University of Science and Technology"
               }
@@ -374,7 +374,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "17:45–18:00",
-                title: "Title to be confirmed",
+                title: "Who Expects Technology to Replace Human Work? Positional Dependence and Beliefs about AI in China’s Labor Market",
                 presenters: "Xuejie Ding",
                 speakerOnline: true
               },
@@ -712,7 +712,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "From Digital Traces to AI-Driven Inquiry: The Evolution of Computational Social Science (2009–2025)",
                 presenters: "Jianxun Chu and Yuqi Zhu"
               },
-              { time: "16:15–16:30", title: "Title to be confirmed", presenters: "Aarushi Sharma" },
+              {
+                time: "16:15–16:30",
+                title: "The Deviation Carries the Computation: Causal Surgery on Geometric Representations in Language Models",
+                presenters: "Aarushi Sharma"
+              },
               { time: "16:30–16:45", title: "Title to be confirmed", presenters: "Mingyue Liu" },
               {
                 time: "16:45–17:00",

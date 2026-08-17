@@ -122,11 +122,6 @@ export const posterPresentations = [
     href: "https://openreview.net/forum?id=hoSsOOFhnI"
   },
   {
-    title: "The relationship between social order and crime in Nottingham, England",
-    presenter: "Fanqi Zeng",
-    href: "https://openreview.net/forum?id=a7K7nqfq31"
-  },
-  {
     title: "Rethinking Parental Involvement in Disadvantaged Families: The Importance of Invitations",
     presenter: "Xiaohang Feng",
     href: "https://openreview.net/forum?id=69WDUfTGxr"
