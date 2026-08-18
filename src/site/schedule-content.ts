@@ -324,7 +324,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "16:30–16:45",
-                title: "When the Same Insult Targets a Woman or a Man: Minimal-Pair Evidence of Human–LLM (Dis)Agreement in Chinese",
+                title: "When the Same Online Insult Targets Women or Men: Chinese Aggressiveness Ratings by Humans and LLMs Across Response Formats",
                 presenters: "Xuan Bao"
               },
               {
@@ -603,6 +603,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 presenters: "Yidan Huang"
               },
               {
+                time: "14:45–15:00",
+                title: "Asymmetric Affective Polarization in Elite and Public Discourse: Event-Time Evidence from the Black Lives Matter Uprising",
+                presenters: "Sylvia Dou"
+              },
+              {
                 time: "15:00–15:15",
                 title: "Beyond the Home–Work Separation: A RAG-Based Analysis of U.S. Municipal Ordinances and Remote Work",
                 presenters: "Chen Zhanghao"
@@ -729,11 +734,6 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "16:15–16:30",
                 title: "The Deviation Carries the Computation: Causal Surgery on Geometric Representations in Language Models",
                 presenters: "Aarushi Sharma"
-              },
-              {
-                time: "16:30–16:45",
-                title: "Asymmetric Affective Polarization in Elite and Public Discourse: Event-Time Evidence from the Black Lives Matter Uprising",
-                presenters: "Sylvia Dou"
               }
             ]
           }
