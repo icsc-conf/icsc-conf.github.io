@@ -213,6 +213,14 @@ function WorkshopDay() {
                     </p>
                   ) : null}
                   <p className="mt-1 text-sm text-slate-600">Room: {item.room}</p>
+                  {item.type === "session" && item.materialsHref ? (
+                    <p className="mt-2 text-sm">
+                      <a href={item.materialsHref} className={linkClasses}>
+                        Teaching material
+                        <span className="sr-only"> for {item.title}</span>
+                      </a>
+                    </p>
+                  ) : null}
                 </div>
               </li>
             ))}
@@ -274,7 +282,7 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
             <div>
               <p className="text-sm font-bold uppercase">Programme status</p>
               <p className="mt-1 leading-relaxed">
-                Updated <time dateTime="2026-08-18">18 August 2026</time>; details remain subject to change.
+                Updated <time dateTime="2026-08-19">19 August 2026</time>; details remain subject to change.
               </p>
             </div>
           </div>

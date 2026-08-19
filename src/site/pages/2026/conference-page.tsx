@@ -151,6 +151,17 @@ export function Conference2026Page({ paths }: { paths: SitePaths }) {
                       {item.leader}
                     </a>
                     )<span className="mt-1 block text-sm text-slate-600">{item.room}</span>
+                    {item.materialsHref ? (
+                      <a
+                        href={item.materialsHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block font-medium text-sky-700 underline underline-offset-4 hover:text-sky-800"
+                      >
+                        Teaching material
+                        <span className="sr-only"> for {item.title} (opens in a new tab)</span>
+                      </a>
+                    ) : null}
                   </p>
                 )}
               </div>

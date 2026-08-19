@@ -26,6 +26,7 @@ export type WorkshopScheduleItem =
       leader: string;
       href: string;
       room: string;
+      materialsHref?: string;
     }
   | {
       type: "break";
@@ -48,7 +49,8 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour 45 minutes",
     leader: "Germans Savcisens",
     href: "https://savcisens.com/",
-    room: "Main Lecture Theatre"
+    room: "Main Lecture Theatre",
+    materialsHref: "https://carlomarxdk.github.io/workshop-transformers/"
   },
   {
     type: "break",
@@ -63,7 +65,8 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "2 hours",
     leader: "Germans Savcisens",
     href: "https://savcisens.com/",
-    room: "Main Lecture Theatre"
+    room: "Main Lecture Theatre",
+    materialsHref: "https://carlomarxdk.github.io/workshop-transformers/"
   },
   {
     type: "break",
@@ -102,7 +105,8 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour",
     leader: "Charlie Rahal",
     href: "https://crahal.com/",
-    room: "Main Lecture Theatre"
+    room: "Main Lecture Theatre",
+    materialsHref: "https://github.com/crahal/openalex_hackathon"
   },
   {
     type: "session",

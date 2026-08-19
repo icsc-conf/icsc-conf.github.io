@@ -76,7 +76,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               { time: "10:20–10:40", title: "Title to be confirmed", presenters: "Jar-Der Luo" },
               {
                 time: "10:40–11:00",
-                title: "Title to be confirmed",
+                title: "When Human Records Become Data: Opportunities and Pitfalls for Social Computing",
                 presenters: "Xiaoming Fu"
               },
               {
@@ -514,7 +514,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "12:45–13:00",
-                title: "Title to be confirmed",
+                title: "How can diverse AI personas mitigate the homogenization effect in human-GenAI collaborative ideation",
                 presenters: "Yoram Kalman",
                 speakerOnline: true
               },
@@ -534,12 +534,24 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "13:15–13:25",
-                title: "ACM Transactions on Social Computing Awards",
-                presenters: "Various presenters",
-                note: "Chaired by Charles Rahal, Xiaoming Fu, Jar-Der Luo and James Evans"
+                title: "Congratulations to the ACM Transactions on Social Computing Award Winners",
+                presenters: "Multiple award recipients",
+                note: "Chaired by Xiaoming Fu and James Evans",
+                speakerOnline: true
               },
-              { time: "13:25–13:35", title: "Journal of Social Computing Awards" },
-              { time: "13:35–13:45", title: "ICSC Awards" }
+              {
+                time: "13:25–13:35",
+                title: "Congratulations to the Journal of Social Computing Award Winners",
+                presenters: "Multiple award recipients",
+                note: "Chaired by Jar-Der Luo",
+                speakerOnline: true
+              },
+              {
+                time: "13:35–13:45",
+                title: "Congratulations to the ICSC Award Winners",
+                presenters: "Multiple award recipients",
+                note: "Chaired by Charles Rahal"
+              }
             ]
           },
           {
@@ -755,7 +767,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "The impact of generative AI on social media: an experimental study",
                 presenters: "Daniel Romero"
               },
-              { time: "18:00–18:30", title: "Title to be confirmed", presenters: "Germans Savcisens" },
+              {
+                time: "18:00–18:30",
+                title: "Interpretability or Guesswork: What Happens When We Open Up Large Language Models",
+                presenters: "Germans Savcisens"
+              },
               { time: "18:30", title: "Conference close", presenters: "Charles Rahal", kind: "general" }
             ]
           }
