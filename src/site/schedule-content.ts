@@ -53,13 +53,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "09:00–10:00",
                 title: "Registration",
-                room: "Main Lecture Theatre Foyer",
+                room: "Nuffield College Porters' Lodge",
                 kind: "general"
               },
               {
                 time: "09:00–10:00",
                 title: "Poster setup",
-                room: "Junior Common Room",
+                room: "Fellows' Garden",
                 kind: "general"
               }
             ]
@@ -104,7 +104,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "11:40–12:05",
                 title: "Break",
-                room: "Main Lecture Theatre Foyer",
+                room: "Dining Hall",
                 kind: "break"
               }
             ]
@@ -154,8 +154,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "13:15–14:30",
-                title: "Lunch and poster displays",
-                room: "Junior Common Room",
+                title: "Lunch",
+                room: "Dining Hall",
+                kind: "general"
+              },
+              {
+                time: "13:15–14:30",
+                title: "Poster displays",
+                room: "Fellows' Garden",
                 kind: "general"
               }
             ]
@@ -259,7 +265,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "thursday-afternoon-break",
             title: "Afternoon break",
             entries: [
-              { time: "15:30–16:00", title: "Break", room: "Junior Common Room", kind: "break" }
+              { time: "15:30–16:00", title: "Break", room: "Dining Hall", kind: "break" }
             ]
           },
           {
@@ -407,8 +413,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "thursday-posters-dinner",
             title: "Posters and conference dinner",
             entries: [
-              { time: "18:30–19:00", title: "Posters", room: "Room to be confirmed", kind: "general" },
-              { time: "19:00–21:00", title: "Conference dinner", room: "Room to be confirmed", kind: "general" }
+              { time: "18:30–19:00", title: "Posters", room: "Fellows' Garden", kind: "general" },
+              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" }
             ]
           }
         ]
@@ -433,7 +439,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "09:00–10:00",
                 title: "Late registration",
-                room: "Main Lecture Theatre Foyer",
+                room: "Nuffield College Porters' Lodge",
                 kind: "general"
               },
               {
@@ -478,7 +484,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "11:20–11:45",
                 title: "Break",
-                room: "Main Lecture Theatre Foyer",
+                room: "Dining Hall",
                 kind: "break"
               }
             ]
@@ -560,8 +566,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "13:45–14:30",
-                title: "Lunch and poster displays",
-                room: "Junior Common Room",
+                title: "Lunch",
+                room: "Dining Hall",
+                kind: "general"
+              },
+              {
+                time: "13:45–14:30",
+                title: "Poster displays",
+                room: "Fellows' Garden",
                 kind: "general"
               }
             ]
@@ -664,7 +676,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "friday-afternoon-break",
             title: "Afternoon break",
             entries: [
-              { time: "15:30–16:00", title: "Break", room: "Junior Common Room", kind: "break" }
+              { time: "15:30–16:00", title: "Break", room: "Dining Hall", kind: "break" }
             ]
           },
           {

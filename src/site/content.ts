@@ -40,7 +40,7 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     type: "break",
     time: "08:30–09:00",
     title: "Workshop registration",
-    room: "Main Lecture Theatre Foyer"
+    room: "Nuffield College Porters' Lodge"
   },
   {
     type: "session",
@@ -81,7 +81,7 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour",
     leader: "Sophie Johanning (Silta)",
     href: "https://www.silta.ai/",
-    room: "Main Lecture Theatre"
+    room: "Junior Common Room"
   },
   {
     type: "session",
