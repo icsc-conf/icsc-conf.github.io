@@ -282,10 +282,17 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
             <div>
               <p className="text-sm font-bold uppercase">Programme status</p>
               <p className="mt-1 leading-relaxed">
-                Updated <time dateTime="2026-08-19">19 August 2026</time>; details remain subject to change.
+                Updated <time dateTime="2026-08-25">25 August 2026</time>; details remain subject to change.
               </p>
             </div>
           </div>
+
+          <aside aria-labelledby="timing-update-heading" className="mt-5 rounded-2xl border-2 border-amber-500 bg-amber-50 p-5 text-amber-950">
+            <h2 id="timing-update-heading" className="text-lg font-semibold">Important programme timing update</h2>
+            <p className="mt-2 leading-relaxed">
+              Many talks have been brought forward. All participants should check the current time of their talk carefully.
+            </p>
+          </aside>
 
           <nav aria-label="Programme by day" className="mt-7" data-print-hidden="true">
             <ul className="grid gap-3 sm:grid-cols-3">

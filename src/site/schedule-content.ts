@@ -51,13 +51,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Arrivals and setup",
             entries: [
               {
-                time: "09:00–10:00",
+                time: "08:45–09:30",
                 title: "Registration",
                 room: "Nuffield College Porters' Lodge",
                 kind: "general"
               },
               {
-                time: "09:00–10:00",
+                time: "08:45–09:30",
                 title: "Poster setup",
                 room: "Fellows' Garden",
                 kind: "general"
@@ -71,26 +71,26 @@ export const conferenceProgramme: ProgrammeDay[] = [
             chair: "Charles Rahal",
             onlineAudience: true,
             entries: [
-              { time: "09:55–10:00", title: "Welcome to day one of ICSC 2026", presenters: "Charles Rahal" },
-              { time: "10:00–10:20", title: "Title to be confirmed", presenters: "James Evans" },
-              { time: "10:20–10:40", title: "Title to be confirmed", presenters: "Jar-Der Luo" },
+              { time: "09:30–09:35", title: "Welcome to day one of ICSC 2026", presenters: "Charles Rahal" },
+              { time: "09:35–09:50", title: "Title to be confirmed", presenters: "James Evans" },
+              { time: "09:50–10:05", title: "Title to be confirmed", presenters: "Jar-Der Luo" },
               {
-                time: "10:40–11:00",
+                time: "10:05–10:20",
                 title: "When Human Records Become Data: Opportunities and Pitfalls for Social Computing",
                 presenters: "Xiaoming Fu"
               },
               {
-                time: "11:00–11:20",
+                time: "10:20–10:35",
                 title: "Understanding the Behavior of LLM-Driven Social Agents",
                 presenters: "Yang Chen"
               },
               {
-                time: "11:20–11:40",
+                time: "11:00–11:15",
                 title: "Social Event Prediction with Context-Adaptive Temporal Knowledge Graph Reasoning",
                 presenters: "Wenzhong Li"
               },
               {
-                time: "12:05–12:25",
+                time: "11:15–11:30",
                 title: "From Analysis to Simulation: Exploring Public Opinion, AIGC-Mediated Engagement, and Emergent Social Dynamics",
                 presenters: "Bo Zhao",
                 note: "Sponsored keynote talk from East China University of Science and Technology"
@@ -102,7 +102,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Morning break",
             entries: [
               {
-                time: "11:40–12:05",
+                time: "10:35–11:00",
                 title: "Break",
                 room: "Dining Hall",
                 kind: "break"
@@ -117,32 +117,32 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "11:45–12:00",
+                time: "11:30–11:45",
                 title: "Platonic Representations for Poverty Mapping: Unified Vision-Language Codes or Agent-Induced Novelty?",
                 presenters: "Satiyabooshan Murugaboopathy"
               },
               {
-                time: "12:00–12:15",
+                time: "11:45–12:00",
                 title: "The Shrinking Globe: Structural Evolution and Globalization of the International Migration Network (1990–2024)",
                 presenters: "Carlos Sarraute"
               },
               {
-                time: "12:15–12:30",
+                time: "12:00–12:15",
                 title: "Forced Migration and Information-Seeking Behavior on Wikipedia: Insights from the Ukrainian Refugee Crisis",
                 presenters: "Carolina Coimbra"
               },
               {
-                time: "12:30–12:45",
+                time: "12:15–12:30",
                 title: "Auditing Population Mapping Infrastructures in Four Global South Cities",
                 note: "Presenter to be confirmed"
               },
               {
-                time: "12:45–13:00",
+                time: "12:30–12:45",
                 title: "Who Benefits and Who Gets Replaced? Demographic Patterns of Generative AI Exposure in the United States",
                 presenters: "Riccardo Omenti"
               },
               {
-                time: "13:00–13:15",
+                time: "12:45–13:00",
                 title: "Modelling Kinship Networks using Analytical and Microsimulation Approaches",
                 presenters: "Liliana P. Calderón-Bernal"
               }
@@ -153,13 +153,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Lunch and posters",
             entries: [
               {
-                time: "13:15–14:30",
+                time: "13:00–14:00",
                 title: "Lunch",
                 room: "Dining Hall",
                 kind: "general"
               },
               {
-                time: "13:15–14:30",
+                time: "13:00–14:30",
                 title: "Poster displays",
                 room: "Fellows' Garden",
                 kind: "general"
@@ -379,7 +379,12 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "thursday-transition-break",
             title: "Break before the evening programme",
             entries: [
-              { time: "17:30–17:45", title: "Break — no refreshments provided", kind: "break" }
+              {
+                time: "17:15 or 17:30–17:45",
+                title: "Break — no refreshments provided",
+                note: "The break begins when your parallel session ends, at either 17:15 or 17:30.",
+                kind: "break"
+              }
             ]
           }
         ]
@@ -437,13 +442,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Arrivals",
             entries: [
               {
-                time: "09:00–10:00",
+                time: "09:00–09:25",
                 title: "Late registration",
                 room: "Nuffield College Porters' Lodge",
                 kind: "general"
               },
               {
-                time: "09:55–10:00",
+                time: "09:25–09:30",
                 title: "Welcome to day two of ICSC 2026",
                 room: "Main Lecture Theatre",
                 presenters: "Charles Rahal",
@@ -459,22 +464,22 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "10:00–10:20",
+                time: "09:30–09:45",
                 title: "Algorithmic Realism: Data Science Practices to Promote Social Justice",
                 presenters: "Ben Green"
               },
               {
-                time: "10:20–10:40",
+                time: "09:45–10:00",
                 title: "Sequence analysis of partnership formation: A case of Japan",
                 presenters: "Jun Kobayashi"
               },
-              { time: "10:40–11:00", title: "Title to be confirmed", presenters: "Adel Daoud" },
+              { time: "10:00–10:15", title: "Title to be confirmed", presenters: "Adel Daoud" },
               {
-                time: "11:00–11:20",
+                time: "10:15–10:30",
                 title: "Measuring and Utilizing Temporal Network Dissimilarity",
                 presenters: "Xiuxiu Zhan"
               },
-              { time: "11:45–12:00", title: "Title to be confirmed", presenters: "Miao Chun Yan" }
+              { time: "11:15–11:30", title: "Title to be confirmed", presenters: "Miao Chun Yan" }
             ]
           },
           {
@@ -482,7 +487,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Morning break",
             entries: [
               {
-                time: "11:20–11:45",
+                time: "10:30–11:00",
                 title: "Break",
                 room: "Dining Hall",
                 kind: "break"
@@ -497,18 +502,18 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "12:00–12:10",
+                time: "11:30–11:40",
                 title: "Institutionalizing Game Preservation and Game Literacy Education: The Practices of Homo Ludens Archive",
                 presenters: "Pin Lin"
               },
-              { time: "12:10–12:20", title: "What we learn from playing video games", presenters: "Amanda Curtis" },
+              { time: "11:40–11:50", title: "What we learn from playing video games", presenters: "Amanda Curtis" },
               {
-                time: "12:20–12:30",
+                time: "11:50–12:00",
                 title: "Why Educational Games Fail—and How AI Could Change That",
                 presenters: "Jonathan Chen",
                 speakerOnline: true
               },
-              { time: "12:30–12:45", title: "Panel discussion", presenters: "Huilian Sophie Qiu" }
+              { time: "12:00–12:15", title: "Panel discussion", presenters: "Huilian Sophie Qiu" }
             ]
           },
           {
@@ -519,13 +524,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "12:45–13:00",
+                time: "12:15–12:30",
                 title: "How can diverse AI personas mitigate the homogenization effect in human-GenAI collaborative ideation",
                 presenters: "Yoram Kalman",
                 speakerOnline: true
               },
               {
-                time: "13:00–13:15",
+                time: "12:30–12:45",
                 title: "Measuring CI/CD Pipeline Health: From Build Metrics to Developer Productivity",
                 presenters: "Sandeep Khandelwal",
                 speakerOnline: true
@@ -539,21 +544,21 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "13:15–13:25",
+                time: "12:45–12:55",
                 title: "Congratulations to the ACM Transactions on Social Computing Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Xiaoming Fu and James Evans",
                 speakerOnline: true
               },
               {
-                time: "13:25–13:35",
+                time: "12:55–13:05",
                 title: "Congratulations to the Journal of Social Computing Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Jar-Der Luo",
                 speakerOnline: true
               },
               {
-                time: "13:35–13:45",
+                time: "13:05–13:15",
                 title: "Congratulations to the ICSC Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Charles Rahal"
@@ -565,13 +570,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Lunch and posters",
             entries: [
               {
-                time: "13:45–14:30",
+                time: "13:15–14:00",
                 title: "Lunch",
                 room: "Dining Hall",
                 kind: "general"
               },
               {
-                time: "13:45–14:30",
+                time: "13:15–14:00",
                 title: "Poster displays",
                 room: "Fellows' Garden",
                 kind: "general"
