@@ -419,7 +419,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Posters and conference dinner",
             entries: [
               { time: "18:30–19:00", title: "Posters", room: "Fellows' Garden", kind: "general" },
-              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" }
+              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" },
+              {
+                time: "21:00",
+                title: "Coffee and mints after the conference dinner",
+                room: "Senior Common Room",
+                kind: "general"
+              }
             ]
           }
         ]
