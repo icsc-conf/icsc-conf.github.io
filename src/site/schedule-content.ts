@@ -355,7 +355,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "16:15–16:30",
                 title: "Spatial Structure and Evolution of AI Labor Demand in China: Evidence from Job Advertisements",
-                presenters: "Yuanxin Li"
+                presenters: "James Ng"
               },
               {
                 time: "16:30–16:45",
@@ -603,6 +603,12 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
+                time: "14:15–14:30",
+                title: "Fine-grained Classification of A Million Life Trajectories from Wikipedia",
+                presenters: "Haipeng Zhang",
+                speakerOnline: true
+              },
+              {
                 time: "14:30–14:45",
                 title: "Who Gets to Define Alignment? Stakeholder Contestation in Public Comments on the NIST Generative AI Risk Profile",
                 presenters: "Ruoxi Li"
@@ -615,7 +621,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "15:00–15:15",
                 title: "Artificial Intelligence and Natural Uncertainty: A Taxonomy and a Primer",
-                presenters: "Daniel Valdenegro"
+                presenters: "Daniel Valdenegro",
+                speakerOnline: true
               },
               {
                 time: "15:15–15:30",
@@ -731,11 +738,6 @@ export const conferenceProgramme: ProgrammeDay[] = [
             chair: "Adel Daoud",
             onlineAudience: false,
             entries: [
-              {
-                time: "16:00–16:15",
-                title: "Fine-grained Classification of A Million Life Trajectories from Wikipedia",
-                presenters: "Haipeng Zhang"
-              },
               {
                 time: "16:15–16:30",
                 title: "Beyond Retrieval: Incorporating Personality and Emotion into RAG-Based Conversational Agents",
