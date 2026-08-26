@@ -233,22 +233,16 @@ function WorkshopDay() {
             <h3 className="mt-1 text-xl font-semibold text-indigo-950">Editorial board meetings</h3>
             <p className="mt-2 text-sm leading-relaxed text-indigo-900">Chester Room · Invitation only · Online option available</p>
           </header>
-          <ol className="divide-y divide-indigo-200">
+          <ol>
             <li className="px-5 py-4">
               <TimeRange
                 date="2026-09-02"
-                value="14:00–15:00"
+                value="14:00–16:00"
                 className="font-mono text-sm font-bold text-indigo-900"
               />
-              <p className="mt-2 font-semibold text-indigo-950">Journal of Social Computing Editorial Board Meeting</p>
-            </li>
-            <li className="px-5 py-4">
-              <TimeRange
-                date="2026-09-02"
-                value="15:00–16:00"
-                className="font-mono text-sm font-bold text-indigo-900"
-              />
-              <p className="mt-2 font-semibold text-indigo-950">ACM Transactions on Social Computing Editorial Board Meeting</p>
+              <p className="mt-2 font-semibold text-indigo-950">
+                Joint Journal of Social Computing and ACM Transactions on Social Computing Editorial Board Meeting
+              </p>
             </li>
           </ol>
         </article>
