@@ -175,7 +175,7 @@ export const posterPresentations = [
   {
     title:
       "Making Low-Visibility Policies Discoverable: A Document-Embedding Approach to Inclusive Cross-Boundary Policy Comparison",
-    presenter: "Chenxi Lin",
+    presenter: "Yujing Zhou and Chenxi Lin",
     href: "https://openreview.net/forum?id=Ndk4RFNtsL"
   },
   {
