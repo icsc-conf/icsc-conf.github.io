@@ -623,12 +623,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "14:30–14:45",
                 title: "Who Gets to Define Alignment? Stakeholder Contestation in Public Comments on the NIST Generative AI Risk Profile",
-                presenters: "Ruoxi Li"
+                presenters: "Ruoxi Li",
+                speakerOnline: true
               },
               {
                 time: "14:45–15:00",
-                title: "Recursive Norm Refinement for Modern Slavery Risk Reasoning in Social LLM Systems",
-                presenters: "Zijin Wu, Haley Yi and David Scott Lewis"
+                title: "Deepfakes at the Media–Law Boundary: A Multilingual Thematic Analysis of Platformed News Discourse",
+                presenters: "Yidan Huang",
+                speakerOnline: true
               },
               {
                 time: "15:00–15:15",
@@ -653,8 +655,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "14:30–14:45",
-                title: "Deepfakes at the Media–Law Boundary: A Multilingual Thematic Analysis of Platformed News Discourse",
-                presenters: "Yidan Huang"
+                title: "Recursive Norm Refinement for Modern Slavery Risk Reasoning in Social LLM Systems",
+                presenters: "Zijin Wu, Haley Yi and David Scott Lewis"
               },
               {
                 time: "14:45–15:00",
