@@ -73,7 +73,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               { time: "09:30–09:35", title: "Welcome to day one of ICSC 2026", presenters: "Charles Rahal" },
               { time: "09:35–09:50", title: "Title to be confirmed", presenters: "James Evans" },
-              { time: "09:50–10:05", title: "Title to be confirmed", presenters: "Jar-Der Luo" },
+              {
+                time: "09:50–10:05",
+                title: "A Social Experiment for Community Revitalisation",
+                presenters: "Jar-Der Luo"
+              },
               {
                 time: "10:05–10:20",
                 title: "When Human Records Become Data: Opportunities and Pitfalls for Social Computing",
@@ -307,7 +311,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Mapping Reviewable Discretion in Access-to-Information Laws: A Social Computing Framework for Multilingual Legal Text Measurement",
                 presenters: "Shuaiyu Yang",
                 speakerOnline: true,
-                onlineAudience: false
+                onlineAudience: true
               }
             ]
           },
@@ -458,6 +462,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Welcome to day two of ICSC 2026",
                 room: "Main Lecture Theatre",
                 presenters: "Charles Rahal",
+                note: "Chaired by Yang Chen",
                 onlineAudience: true
               }
             ]
@@ -466,7 +471,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "friday-keynotes",
             title: "Morning keynotes",
             room: "Main Lecture Theatre",
-            chair: "Charles Rahal",
+            chair: "Yang Chen",
             onlineAudience: true,
             entries: [
               {
@@ -484,8 +489,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "10:15–10:30",
                 title: "Measuring and Utilizing Temporal Network Dissimilarity",
                 presenters: "Xiuxiu Zhan"
-              },
-              { time: "11:15–11:30", title: "Title to be confirmed", presenters: "Miao Chun Yan" }
+              }
             ]
           },
           {
@@ -499,6 +503,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 kind: "break"
               }
             ]
+          },
+          {
+            id: "friday-post-break-keynote",
+            title: "Post-break keynote",
+            room: "Main Lecture Theatre",
+            chair: "Charles Rahal",
+            onlineAudience: true,
+            entries: [{ time: "11:15–11:30", title: "Title to be confirmed", presenters: "Miao Chun Yan" }]
           },
           {
             id: "video-games-education",
@@ -771,6 +783,11 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "16:15–16:30",
                 title: "The Deviation Carries the Computation: Causal Surgery on Geometric Representations in Language Models",
                 presenters: "Aarushi Sharma"
+              },
+              {
+                time: "16:45–17:00",
+                title: "AI-aided ethnography and agent-based modelling for insights into collective adaptation",
+                presenters: "Timo Damm"
               }
             ]
           }
