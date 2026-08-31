@@ -81,7 +81,7 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour",
     leader: "Sophie Johanning (Silta)",
     href: "https://www.silta.ai/",
-    room: "Junior Common Room"
+    room: "Main Lecture Theatre"
   },
   {
     type: "session",
