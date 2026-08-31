@@ -137,7 +137,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "12:15–12:30",
                 title: "Auditing Population Mapping Infrastructures in Four Global South Cities",
-                presenters: "Wenlan"
+                presenters: "Wenlan Zhang"
               },
               {
                 time: "12:30–12:45",
@@ -309,8 +309,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 time: "17:15–17:30",
                 title: "Mapping Reviewable Discretion in Access-to-Information Laws: A Social Computing Framework for Multilingual Legal Text Measurement",
                 presenters: "Shuaiyu Yang",
-                speakerOnline: true,
-                onlineAudience: true
+                speakerOnline: true
               }
             ]
           },
@@ -467,21 +466,16 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "09:30–09:45",
+                time: "09:30–09:50",
                 title: "Algorithmic Realism: Data Science Practices to Promote Social Justice",
                 presenters: "Ben Green"
               },
               {
-                time: "09:45–10:00",
+                time: "09:50–10:10",
                 title: "Sequence analysis of partnership formation: A case of Japan",
                 presenters: "Jun Kobayashi"
               },
-              { time: "10:00–10:15", title: "Title to be confirmed", presenters: "Adel Daoud" },
-              {
-                time: "10:15–10:30",
-                title: "Measuring and Utilizing Temporal Network Dissimilarity",
-                presenters: "Xiuxiu Zhan"
-              }
+              { time: "10:10–10:30", title: "Title to be confirmed", presenters: "Adel Daoud" }
             ]
           },
           {
@@ -500,9 +494,15 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "friday-post-break-keynote",
             title: "Post-break keynote",
             room: "Main Lecture Theatre",
-            chair: "Charles Rahal",
+            chair: "Yang Chen",
             onlineAudience: true,
-            entries: [{ time: "11:15–11:30", title: "Title to be confirmed", presenters: "Miao Chun Yan" }]
+            entries: [
+              {
+                time: "11:00–11:20",
+                title: "Measuring and Utilizing Temporal Network Dissimilarity",
+                presenters: "Xiuxiu Zhan"
+              }
+            ]
           },
           {
             id: "video-games-education",
@@ -512,18 +512,18 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "11:30–11:40",
+                time: "11:20–11:30",
                 title: "Institutionalizing Game Preservation and Game Literacy Education: The Practices of Homo Ludens Archive",
                 presenters: "Pin Lin"
               },
-              { time: "11:40–11:50", title: "What we learn from playing video games", presenters: "Amanda Curtis" },
+              { time: "11:30–11:40", title: "What we learn from playing video games", presenters: "Amanda Curtis" },
               {
-                time: "11:50–12:00",
+                time: "11:40–11:50",
                 title: "Why Educational Games Fail—and How AI Could Change That",
                 presenters: "Jonathan Chen",
                 speakerOnline: true
               },
-              { time: "12:00–12:15", title: "Panel discussion", presenters: "Huilian Sophie Qiu" }
+              { time: "11:50–12:05", title: "Panel discussion", presenters: "Huilian Sophie Qiu" }
             ]
           },
           {
@@ -534,13 +534,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "12:15–12:30",
+                time: "12:05–12:20",
                 title: "How can diverse AI personas mitigate the homogenization effect in human-GenAI collaborative ideation",
                 presenters: "Yoram Kalman",
                 speakerOnline: true
               },
               {
-                time: "12:30–12:45",
+                time: "12:20–12:35",
                 title: "Measuring CI/CD Pipeline Health: From Build Metrics to Developer Productivity",
                 presenters: "Sandeep Khandelwal",
                 speakerOnline: true
@@ -554,21 +554,21 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               {
-                time: "12:45–12:55",
+                time: "12:35–12:45",
                 title: "Congratulations to the ACM Transactions on Social Computing Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Xiaoming Fu and James Evans",
                 speakerOnline: true
               },
               {
-                time: "12:55–13:05",
+                time: "12:45–12:55",
                 title: "Congratulations to the Journal of Social Computing Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Jar-Der Luo",
                 speakerOnline: true
               },
               {
-                time: "13:05–13:15",
+                time: "12:55–13:05",
                 title: "Congratulations to the ICSC Award Winners",
                 presenters: "Multiple award recipients",
                 note: "Chaired by Charles Rahal"
@@ -580,13 +580,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Lunch and posters",
             entries: [
               {
-                time: "13:15–14:00",
+                time: "13:05–14:00",
                 title: "Lunch",
                 room: "Dining Hall",
                 kind: "general"
               },
               {
-                time: "13:15–14:00",
+                time: "13:05–14:00",
                 title: "Poster displays",
                 room: "Fellows' Garden",
                 kind: "general"
