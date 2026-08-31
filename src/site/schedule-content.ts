@@ -156,7 +156,13 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Lunch and posters",
             entries: [
               {
-                time: "13:00–14:00",
+                time: "13:00–13:05",
+                title: "Group photograph",
+                room: "Nuffield College Quad",
+                kind: "general"
+              },
+              {
+                time: "13:05–14:00",
                 title: "Lunch",
                 room: "Dining Hall",
                 kind: "general"
@@ -352,6 +358,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Session 6 — AI and Inequality in Work and Science",
             room: "Chester Room",
             chair: "Jiani Yan",
+            onlineAudience: false,
             entries: [
               { time: "16:00–16:15", title: "Where Are the Limits of Prediction?", presenters: "Xiang Wan" },
               {
@@ -420,7 +427,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Posters and conference dinner",
             entries: [
               { time: "18:30–19:00", title: "Posters", room: "Fellows' Garden", kind: "general" },
-              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" }
+              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" },
+              { time: "21:00", title: "Coffee and mints", room: "Senior Common Room", kind: "general" }
             ]
           }
         ]
