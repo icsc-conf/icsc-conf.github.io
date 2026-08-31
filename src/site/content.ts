@@ -81,7 +81,8 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour",
     leader: "Sophie Johanning (Silta)",
     href: "https://www.silta.ai/",
-    room: "Main Lecture Theatre"
+    room: "Main Lecture Theatre",
+    materialsHref: "https://drive.google.com/drive/folders/1NOjQ9EQTdKqvQt2BGh4NvLnJNa7IjFWq"
   },
   {
     type: "session",
@@ -90,13 +91,14 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
     duration: "1 hour",
     leader: "Yuqi Liang",
     href: "https://www.yuqi-liang.tech/",
-    room: "Main Lecture Theatre"
+    room: "Main Lecture Theatre",
+    materialsHref: "https://sequenzo.yuqi-liang.tech/en/basics/view-tutorials-online"
   },
   {
     type: "break",
     time: "16:00–16:15",
     title: "Break",
-    room: "Main Lecture Theatre"
+    room: "Junior Common Room"
   },
   {
     type: "session",

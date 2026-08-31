@@ -72,19 +72,18 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: true,
             entries: [
               { time: "09:30–09:35", title: "Welcome to day one of ICSC 2026", presenters: "Charles Rahal" },
-              { time: "09:35–09:50", title: "Title to be confirmed", presenters: "James Evans" },
               {
-                time: "09:50–10:05",
+                time: "09:35–09:55",
                 title: "A Social Experiment for Community Revitalisation",
                 presenters: "Jar-Der Luo"
               },
               {
-                time: "10:05–10:20",
+                time: "09:55–10:15",
                 title: "When Human Records Become Data: Opportunities and Pitfalls for Social Computing",
                 presenters: "Xiaoming Fu"
               },
               {
-                time: "10:20–10:35",
+                time: "10:15–10:35",
                 title: "Understanding the Behavior of LLM-Driven Social Agents",
                 presenters: "Yang Chen"
               },
@@ -138,7 +137,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "12:15–12:30",
                 title: "Auditing Population Mapping Infrastructures in Four Global South Cities",
-                note: "Presenter to be confirmed"
+                presenters: "Wenlan"
               },
               {
                 time: "12:30–12:45",
@@ -157,13 +156,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Lunch and posters",
             entries: [
               {
-                time: "13:00–13:05",
-                title: "Conference photograph",
-                room: "Nuffield College Quad",
-                kind: "general"
-              },
-              {
-                time: "13:05–14:00",
+                time: "13:00–14:00",
                 title: "Lunch",
                 room: "Dining Hall",
                 kind: "general"
@@ -207,9 +200,9 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "15:15–15:30",
-                title: "Collaboration and Conflict in the Redditverse: Longitudinal Network Dynamics in Protest Communities",
-                presenters: "Janine Schröder",
-                onlineAudience: false
+                title: "Mapping Strategic Narratives in Chinese State Media: A Sentence-BERT Analysis of Russia–Ukraine and Israel–Palestine War Coverage",
+                presenters: "Yuhan Deng",
+                speakerOnline: true
               }
             ]
           },
@@ -256,8 +249,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "14:45–15:00",
-                title: "Mapping Strategic Narratives in Chinese State Media: A Sentence-BERT Analysis of Russia–Ukraine and Israel–Palestine War Coverage",
-                presenters: "Yuhan Deng"
+                title: "Collaboration and Conflict in the Redditverse: Longitudinal Network Dynamics in Protest Communities",
+                presenters: "Janine Schröder"
               },
               {
                 time: "15:00–15:15",
@@ -365,7 +358,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "16:15–16:30",
                 title: "Spatial Structure and Evolution of AI Labor Demand in China: Evidence from Job Advertisements",
-                presenters: "James Ng"
+                presenters: "Yuanxin Li"
               },
               {
                 time: "16:30–16:45",
@@ -380,8 +373,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "17:00–17:15",
                 title: "The uneven embedding of AI in scientific workflows: Technological generations and the restructuring of scientific work",
-                presenters: "Rong Ni",
-                onlineAudience: true
+                presenters: "Rong Ni"
               }
             ]
           },
@@ -429,13 +421,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Posters and conference dinner",
             entries: [
               { time: "18:30–19:00", title: "Posters", room: "Fellows' Garden", kind: "general" },
-              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" },
-              {
-                time: "21:00",
-                title: "Coffee and mints after the conference dinner",
-                room: "Senior Common Room",
-                kind: "general"
-              }
+              { time: "19:00–21:00", title: "Conference dinner", room: "Dining Hall", kind: "general" }
             ]
           }
         ]
@@ -714,7 +700,18 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "friday-afternoon-break",
             title: "Afternoon break",
             entries: [
-              { time: "15:30–16:00", title: "Break", room: "Dining Hall", kind: "break" }
+              {
+                time: "15:30–16:00",
+                title: "Break — Main Lecture Theatre track",
+                room: "Dining Hall",
+                kind: "break"
+              },
+              {
+                time: "15:30–16:00",
+                title: "Break — Butler and Chester Room tracks",
+                room: "Junior Common Room",
+                kind: "break"
+              }
             ]
           },
           {
