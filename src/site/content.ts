@@ -71,7 +71,7 @@ export const preConferenceWorkshopSchedule: WorkshopScheduleItem[] = [
   {
     type: "break",
     time: "13:00–14:00",
-    title: "Lunch",
+    title: "Lunch and late registration",
     room: "Junior Common Room"
   },
   {

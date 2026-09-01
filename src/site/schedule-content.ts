@@ -171,7 +171,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               },
               {
                 time: "13:05–14:00",
-                title: "Lunch",
+                title: "Lunch and late registration",
                 room: "Dining Hall",
                 kind: "general"
               },
@@ -600,7 +600,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "13:05–14:00",
-                title: "Lunch",
+                title: "Lunch and late registration",
                 room: "Dining Hall",
                 kind: "general"
               },
