@@ -399,6 +399,16 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
             </a>
             .
           </p>
+          <p className="mt-5 leading-relaxed text-indigo-950">
+            See the Nuffield College IT and Zoom instructions in the{" "}
+            <a
+              href={`${paths.assetPrefix}assets/2026/Nuffield-College-IT-and-Zoom-Guide.pdf`}
+              className="font-semibold underline decoration-2 underline-offset-4 hover:text-indigo-700"
+            >
+              Presenters Guide
+            </a>{" "}
+            (PDF).
+          </p>
         </aside>
       </main>
     </SiteShell>
