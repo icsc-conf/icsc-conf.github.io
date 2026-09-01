@@ -7,6 +7,7 @@ import {
   Conference2026Page,
   ConferenceCallPaperPage,
   ConferenceCommitteePage,
+  ConferencePrintProgrammePage,
   ConferenceSchedulePage,
   ConferenceSponsorsPage,
   PastConferencesPage,
@@ -160,6 +161,13 @@ const pages: PageSpec[] = [
     description: "Accessible three-day programme for ICSC 2026 at Nuffield College, University of Oxford.",
     cssHref: "../site.css",
     render: () => <ConferenceSchedulePage paths={conferencePaths} />
+  },
+  {
+    outputPath: "2026/programme-print.html",
+    title: "ICSC 2026 Printable Conference Programme",
+    description: "Two-sided A4 print programme for ICSC 2026 at Nuffield College, University of Oxford.",
+    cssHref: "../site.css",
+    render: () => <ConferencePrintProgrammePage />
   },
   {
     outputPath: "2026/sponsors.html",

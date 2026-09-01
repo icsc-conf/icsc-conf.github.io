@@ -721,14 +721,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
             entries: [
               {
                 time: "15:30–16:00",
-                title: "Break — Main Lecture Theatre track",
+                title: "Break",
                 room: "Dining Hall",
-                kind: "break"
-              },
-              {
-                time: "15:30–16:00",
-                title: "Break — Butler and Chester Room tracks",
-                room: "Junior Common Room",
                 kind: "break"
               }
             ]
