@@ -578,22 +578,19 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "12:35–12:45",
                 title: "Congratulations to the ACM Transactions on Social Computing Award Winners",
-                presenters: "Multiple award recipients",
-                note: "Chaired by Xiaoming Fu and James Evans",
+                presenters: "Xiaoming Fu",
                 speakerOnline: true
               },
               {
                 time: "12:45–12:55",
                 title: "Congratulations to the Journal of Social Computing Award Winners",
-                presenters: "Multiple award recipients",
-                note: "Chaired by Jar-Der Luo",
+                presenters: "Jar-Der Luo",
                 speakerOnline: true
               },
               {
                 time: "12:55–13:05",
                 title: "Congratulations to the ICSC Award Winners",
-                presenters: "Multiple award recipients",
-                note: "Chaired by Charles Rahal"
+                presenters: "Charles Rahal"
               }
             ]
           },
