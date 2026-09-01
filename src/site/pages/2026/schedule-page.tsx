@@ -276,7 +276,7 @@ export function ConferenceSchedulePage({ paths }: { paths: SitePaths }) {
             <div>
               <p className="text-sm font-bold uppercase">Programme status</p>
               <p className="mt-1 leading-relaxed">
-                Updated <time dateTime="2026-08-31">31 August 2026</time>; details remain subject to change.
+                Updated <time dateTime="2026-09-01">1 September 2026</time>; final programme.
               </p>
             </div>
           </div>

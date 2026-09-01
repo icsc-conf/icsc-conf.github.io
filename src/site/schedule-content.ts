@@ -68,35 +68,43 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "thursday-keynotes",
             title: "Welcome and opening keynotes",
             room: "Main Lecture Theatre",
-            chair: "Charles Rahal",
             onlineAudience: true,
             entries: [
-              { time: "09:30–09:35", title: "Welcome to day one of ICSC 2026", presenters: "Charles Rahal" },
+              {
+                time: "09:30–09:35",
+                title: "Welcome to day one of ICSC 2026",
+                presenters: "Charles Rahal",
+                note: "Chaired by Charles Rahal"
+              },
               {
                 time: "09:35–09:55",
-                title: "A Social Experiment for Community Revitalisation",
-                presenters: "Jar-Der Luo"
+                title: "From Online Traces to Material Imprints: Articulating a Vision for Planetary Social Computing",
+                presenters: "Adel Daoud",
+                note: "Chaired by Charles Rahal"
               },
               {
                 time: "09:55–10:15",
                 title: "When Human Records Become Data: Opportunities and Pitfalls for Social Computing",
-                presenters: "Xiaoming Fu"
+                presenters: "Xiaoming Fu",
+                note: "Chaired by Charles Rahal"
               },
               {
                 time: "10:15–10:35",
                 title: "Understanding the Behavior of LLM-Driven Social Agents",
-                presenters: "Yang Chen"
+                presenters: "Yang Chen",
+                note: "Chaired by Charles Rahal"
               },
               {
                 time: "11:00–11:15",
                 title: "Social Event Prediction with Context-Adaptive Temporal Knowledge Graph Reasoning",
-                presenters: "Wenzhong Li"
+                presenters: "Wenzhong Li",
+                note: "Chaired by Charles Rahal"
               },
               {
                 time: "11:15–11:30",
                 title: "From Analysis to Simulation: Exploring Public Opinion, AIGC-Mediated Engagement, and Emergent Social Dynamics",
                 presenters: "Bo Zhao",
-                note: "Sponsored keynote talk from East China University of Science and Technology"
+                note: "Chaired by Charles Rahal. Sponsored keynote talk from East China University of Science and Technology."
               }
             ]
           },
@@ -245,7 +253,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "session-3",
             title: "Session 3 — Political Discourse, Framing, and Computational Text Analysis",
             room: "Chester Room",
-            chair: "Jiani Yan",
+            chair: "Daniel Valdenegro",
             onlineAudience: false,
             entries: [
               {
@@ -357,14 +365,14 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "session-6",
             title: "Session 6 — AI and Inequality in Work and Science",
             room: "Chester Room",
-            chair: "Jiani Yan",
+            chair: "Daniel Valdenegro",
             onlineAudience: false,
             entries: [
               { time: "16:00–16:15", title: "Where Are the Limits of Prediction?", presenters: "Xiang Wan" },
               {
                 time: "16:15–16:30",
                 title: "Spatial Structure and Evolution of AI Labor Demand in China: Evidence from Job Advertisements",
-                presenters: "Yuanxin Li"
+                presenters: "James Ng"
               },
               {
                 time: "16:30–16:45",
@@ -470,20 +478,26 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "friday-keynotes",
             title: "Morning keynotes",
             room: "Main Lecture Theatre",
-            chair: "Yang Chen",
             onlineAudience: true,
             entries: [
               {
                 time: "09:30–09:50",
                 title: "Algorithmic Realism: Data Science Practices to Promote Social Justice",
-                presenters: "Ben Green"
+                presenters: "Ben Green",
+                note: "Chaired by Yang Chen"
               },
               {
                 time: "09:50–10:10",
                 title: "Sequence analysis of partnership formation: A case of Japan",
-                presenters: "Jun Kobayashi"
+                presenters: "Jun Kobayashi",
+                note: "Chaired by Yang Chen"
               },
-              { time: "10:10–10:30", title: "Title to be confirmed", presenters: "Adel Daoud" }
+              {
+                time: "10:10–10:30",
+                title: "A Social Experiment for Community Revitalisation",
+                presenters: "Jar-Der Luo",
+                note: "Chaired by Yang Chen"
+              }
             ]
           },
           {
@@ -594,7 +608,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 kind: "general"
               },
               {
-                time: "13:05–14:00",
+                time: "13:05–14:30",
                 title: "Poster displays",
                 room: "Fellows' Garden",
                 kind: "general"
@@ -679,7 +693,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "session-9",
             title: "Session 9 — Networks, Communities, and Collective Dynamics",
             room: "Chester Room",
-            chair: "Charles Rahal",
+            chair: "Jiani Yan",
             onlineAudience: false,
             entries: [
               {
@@ -764,17 +778,17 @@ export const conferenceProgramme: ProgrammeDay[] = [
             onlineAudience: false,
             entries: [
               {
-                time: "16:15–16:30",
+                time: "16:00–16:25",
                 title: "Beyond Retrieval: Incorporating Personality and Emotion into RAG-Based Conversational Agents",
                 presenters: "Qiang Duan, Yang Chen and Xiaoming Fu"
               },
               {
-                time: "16:30–16:45",
+                time: "16:25–16:50",
                 title: "National Media and Scholarly Contexts of Social Stratification in AI Literacy and Acceptance Across Europe",
                 presenters: "Wei Zhuang"
               },
               {
-                time: "16:45–17:00",
+                time: "16:50–17:15",
                 title: "Perceived Documentation Status from Visual and Audio AI-Generated Cues: A Multimodal Conjoint Study",
                 presenters: "Carolina Coimbra Vieira"
               }
@@ -784,21 +798,21 @@ export const conferenceProgramme: ProgrammeDay[] = [
             id: "session-12",
             title: "Session 12 — Frontiers of Computational Social Science",
             room: "Chester Room",
-            chair: "Charles Rahal",
+            chair: "Jiani Yan",
             onlineAudience: false,
             entries: [
               {
-                time: "16:00–16:15",
+                time: "16:00–16:25",
                 title: "From Digital Traces to AI-Driven Inquiry: The Evolution of Computational Social Science (2009–2025)",
                 presenters: "Jianxun Chu and Yuqi Zhu"
               },
               {
-                time: "16:15–16:30",
+                time: "16:25–16:50",
                 title: "The Deviation Carries the Computation: Causal Surgery on Geometric Representations in Language Models",
                 presenters: "Aarushi Sharma"
               },
               {
-                time: "16:45–17:00",
+                time: "16:50–17:15",
                 title: "AI-aided ethnography and agent-based modelling for insights into collective adaptation",
                 presenters: "Timo Damm"
               }
