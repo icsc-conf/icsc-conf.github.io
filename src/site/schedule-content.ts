@@ -318,12 +318,6 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Are LLMs Cultural Amplifiers? Replicating Human Mate Preferences with Silicon Samples Across Six Countries",
                 presenters: "Yuqian Huang",
                 speakerOnline: true
-              },
-              {
-                time: "17:15–17:30",
-                title: "Mapping Reviewable Discretion in Access-to-Information Laws: A Social Computing Framework for Multilingual Legal Text Measurement",
-                presenters: "Shuaiyu Yang",
-                speakerOnline: true
               }
             ]
           },
@@ -396,9 +390,8 @@ export const conferenceProgramme: ProgrammeDay[] = [
             title: "Break before the evening programme",
             entries: [
               {
-                time: "17:15 or 17:30–17:45",
+                time: "17:15–17:45",
                 title: "Break — no refreshments provided",
-                note: "The break begins when your parallel session ends, at either 17:15 or 17:30.",
                 kind: "break"
               }
             ]
