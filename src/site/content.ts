@@ -391,9 +391,13 @@ export const organizingCommittee = [
     ]
   },
   {
+    title: "Conference Chair",
+    members: ["Charles Rahal, University of Oxford"]
+  },
+  {
     title: "Senior TPC Members",
     members: [
-      "Charles Rahal, University of Oxford",
+      "Jiani Yan, University of Oxford",
       "Daniel Romero, University of Michigan",
       "Adel Daoud, Institute of Analytical Sociology at Linköping University",
       "Mengying Zhou, Shanghai University of Finance and Economics"
@@ -402,7 +406,6 @@ export const organizingCommittee = [
   {
     title: "TPC Members",
     members: [
-      "Jiani Yan, University of Oxford",
       "Mingyue Liu, University of Oxford",
       "Daniel Valdenegro Ibarra, University of Oxford",
       "Aparna Ananthasubramaniam, University of Michigan",
@@ -444,8 +447,14 @@ export const organizingCommittee = [
     ]
   },
   {
-    title: "Registration Chair",
-    members: ["Aarushi Sharma, University of St. Andrews"]
+    title: "Registration Chairs",
+    members: [
+      "Zerui Tian, University of Oxford",
+      "Yuqi Liang, University of Oxford",
+      "Chenxi Li, University of Oxford",
+      "Jiani Yan, University of Oxford",
+      "Jan Meyerhoff-Liang, Leibniz Universität Hannover"
+    ]
   },
   {
     title: "Publicity Co-Chairs",
@@ -478,23 +487,13 @@ export const organizingCommittee = [
     members: ["Mengying Zhou, Shanghai University of Finance and Economics"]
   },
   {
-    title: "Liaison Co-Chairs",
-    members: [
-      "Daniel Valdenegro, University of Oxford",
-      "Jiani Yan, University of Oxford",
-      "Linda Li, London School of Economics and Political Science",
-      "Ava Keeling, University of Oxford",
-      "Anda-Raluca Epure, University of Oxford"
-    ]
-  },
-  {
     title: "Swag Chair",
-    members: ["Luyin Zhang, Princeton University"]
+    members: ["Jiani Yan, University of Oxford"]
   },
 ];
 
 export const programCommittee = [
-  "Charles Rahal, University of Oxford",
+  "Jiani Yan, University of Oxford",
   "Daniel Romero, University of Michigan",
   "Adel Daoud, Linköping University",
   "Mengying Zhou, Shanghai University of Finance and Economics"
