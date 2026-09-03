@@ -93,18 +93,6 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Understanding the Behavior of LLM-Driven Social Agents",
                 presenters: "Yang Chen",
                 note: "Chaired by Charles Rahal"
-              },
-              {
-                time: "11:00–11:15",
-                title: "Social Event Prediction with Context-Adaptive Temporal Knowledge Graph Reasoning",
-                presenters: "Wenzhong Li",
-                note: "Chaired by Charles Rahal"
-              },
-              {
-                time: "11:15–11:30",
-                title: "From Analysis to Simulation: Exploring Public Opinion, AIGC-Mediated Engagement, and Emergent Social Dynamics",
-                presenters: "Bo Zhao",
-                note: "Chaired by Charles Rahal. Sponsored keynote talk from East China University of Science and Technology."
               }
             ]
           },
@@ -117,6 +105,26 @@ export const conferenceProgramme: ProgrammeDay[] = [
                 title: "Break",
                 room: "Dining Hall",
                 kind: "break"
+              }
+            ]
+          },
+          {
+            id: "thursday-post-break-keynotes",
+            title: "Opening keynotes — continued",
+            room: "Main Lecture Theatre",
+            onlineAudience: true,
+            entries: [
+              {
+                time: "11:00–11:15",
+                title: "Social Event Prediction with Context-Adaptive Temporal Knowledge Graph Reasoning",
+                presenters: "Wenzhong Li",
+                note: "Chaired by Charles Rahal"
+              },
+              {
+                time: "11:15–11:30",
+                title: "From Analysis to Simulation: Exploring Public Opinion, AIGC-Mediated Engagement, and Emergent Social Dynamics",
+                presenters: "Bo Zhao",
+                note: "Chaired by Charles Rahal. Sponsored keynote talk from East China University of Science and Technology."
               }
             ]
           },
@@ -627,8 +635,7 @@ export const conferenceProgramme: ProgrammeDay[] = [
               {
                 time: "14:30–14:45",
                 title: "Who Gets to Define Alignment? Stakeholder Contestation in Public Comments on the NIST Generative AI Risk Profile",
-                presenters: "Ruoxi Li",
-                speakerOnline: true
+                presenters: "Ruoxi Li"
               },
               {
                 time: "14:45–15:00",
