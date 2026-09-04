@@ -182,6 +182,13 @@ const slides = [
     time: "17:15–17:30 BST",
     place: "Online stream resumes · Main Lecture Theatre",
     message: "One final pause before we come together for the closing keynotes and conference close.",
+    promo: {
+      eyebrow: "CONTINUE THE CONVERSATION",
+      title: "Metrics and Models",
+      copy: "More talks like these happen online every two weeks. Everyone is welcome to attend.",
+      href: "https://metrics-and-models.github.io/",
+      label: "metrics-and-models.github.io"
+    },
     nextLabel: "Closing programme · Main Lecture Theatre · Online",
     next: [
       ["17:30", "The impact of generative AI on social media: an experimental study", "Daniel Romero"],
@@ -222,6 +229,16 @@ const renderNextItems = (items) => {
     .join("")}</div>`;
 };
 
+const renderPromo = (promo) =>
+  promo
+    ? `<aside class="promo-card">
+        <span>${escapeHtml(promo.eyebrow)}</span>
+        <strong>${escapeHtml(promo.title)}</strong>
+        <p>${escapeHtml(promo.copy)}</p>
+        <a href="${escapeHtml(promo.href)}">${escapeHtml(promo.label)}</a>
+      </aside>`
+    : "";
+
 const sponsorStrip = `<footer class="sponsor-strip">
   <div class="thanks">With thanks to<br><strong>our sponsors</strong></div>
   <img src="../../../images/sponsors/tup.png" alt="Tsinghua University Press">
@@ -248,7 +265,7 @@ const slideMarkup = slides
           <h1>${escapeHtml(slide.title)}</h1>
           <div class="time-line">${escapeHtml(slide.time)}</div>
           <div class="place">${escapeHtml(slide.place)}</div>
-          <p>${escapeHtml(slide.message)}</p>
+          <p>${escapeHtml(slide.message)}</p>${slide.promo ? `\n          ${renderPromo(slide.promo)}` : ""}
           ${renderMiniSchedule(slide.now)}
         </section>
         <section class="next-panel">
@@ -269,59 +286,64 @@ const html = `<!doctype html>
   <meta charset="utf-8">
   <title>ICSC 2026 holding slides</title>
   <style>
-    @page { size: 13.333333in 7.5in; margin: 0; }
+    @page { size: 13.333333in 10in; margin: 0; }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: #fff; font-family: Arial, Helvetica, sans-serif; color: #082b4c; }
-    .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: #fff; page-break-after: always; break-after: page; padding: 30px 48px 0; }
+    .slide { position: relative; width: 1280px; height: 960px; overflow: hidden; background: #fff; page-break-after: always; break-after: page; padding: 38px 48px 0; }
     .slide:last-child { page-break-after: auto; break-after: auto; }
     .slide::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 8px; background: linear-gradient(90deg,#082b4c 0 58%,#e49a32 58% 75%,#d85863 75% 88%,#10a9a2 88%); }
     .warm-orb { position: absolute; border-radius: 999px; pointer-events: none; }
     .warm-orb.one { width: 330px; height: 330px; right: -180px; top: -210px; background: rgba(228,154,50,.10); }
-    .warm-orb.two { width: 190px; height: 190px; left: -115px; bottom: 36px; border: 26px solid rgba(16,169,162,.055); }
-    .topbar { position: relative; z-index: 1; height: 78px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dce7ef; padding-bottom: 16px; }
-    .brand { display: flex; align-items: center; gap: 15px; }
-    .brand img { width: 45px; height: 60px; object-fit: contain; }
+    .warm-orb.two { width: 230px; height: 230px; left: -135px; bottom: 72px; border: 30px solid rgba(16,169,162,.055); }
+    .topbar { position: relative; z-index: 1; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #dce7ef; padding-bottom: 18px; }
+    .brand { min-width: 0; display: flex; align-items: center; gap: 15px; }
+    .brand img { width: 52px; height: 70px; object-fit: contain; }
     .brand div { display: flex; flex-direction: column; gap: 3px; }
-    .brand strong { font-size: 20px; letter-spacing: .045em; color: #082b4c; }
+    .brand strong { font-size: 21px; letter-spacing: .045em; color: #082b4c; }
     .brand span { font-size: 11px; letter-spacing: .08em; color: #547188; text-transform: uppercase; }
-    .date-lockup { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
-    .date-lockup strong { font-size: 15px; letter-spacing: .07em; }
+    .date-lockup { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+    .date-lockup strong { font-size: 16px; letter-spacing: .07em; }
     .date-lockup span { display: inline-flex; background: #082b4c; color: white; padding: 5px 10px; border-radius: 999px; font-size: 10px; letter-spacing: .13em; font-weight: 700; }
-    .slide-body { position: relative; z-index: 1; height: 492px; display: grid; grid-template-columns: 39% 61%; gap: 24px; padding: 24px 0 20px; }
-    .status-panel { border: 1px solid #d8e5ee; border-radius: 22px; padding: 28px 30px 23px; background: linear-gradient(145deg,#f7fbfe 0%,#fffaf4 100%); box-shadow: 0 12px 30px rgba(8,43,76,.06); }
+    .slide-body { position: relative; z-index: 1; height: 670px; display: grid; grid-template-columns: minmax(0, 39%) minmax(0, 61%); gap: 24px; padding: 30px 0 26px; }
+    .status-panel { display: flex; flex-direction: column; border: 1px solid #d8e5ee; border-radius: 22px; padding: 34px 32px 28px; background: linear-gradient(145deg,#f7fbfe 0%,#fffaf4 100%); box-shadow: 0 12px 30px rgba(8,43,76,.06); }
     .state { display: inline-flex; padding: 7px 12px; border-radius: 999px; background: #fff0da; color: #995a05; font-size: 11px; font-weight: 800; letter-spacing: .14em; }
-    h1 { margin: 19px 0 11px; max-width: 430px; font-size: 38px; line-height: 1.04; letter-spacing: -.03em; color: #082b4c; }
-    .time-line { font-size: 22px; line-height: 1.2; font-weight: 800; color: #0b6f82; }
+    h1 { margin: 20px 0 12px; max-width: 430px; font-size: 40px; line-height: 1.04; letter-spacing: -.03em; color: #082b4c; }
+    .time-line { font-size: 23px; line-height: 1.2; font-weight: 800; color: #0b6f82; }
     .place { margin-top: 7px; font-size: 15px; font-weight: 700; color: #466477; }
-    .status-panel > p { margin: 17px 0 0; font-size: 16px; line-height: 1.43; color: #38566c; }
-    .now-list { margin-top: 18px; display: grid; gap: 8px; }
-    .now-item { display: grid; grid-template-columns: 105px 1fr; gap: 10px; align-items: start; padding-top: 8px; border-top: 1px solid #d9e4e9; }
+    .status-panel > p { margin: 18px 0 0; font-size: 17px; line-height: 1.45; color: #38566c; }
+    .promo-card { margin-top: 20px; padding: 16px 17px 17px; border-left: 4px solid #e49a32; border-radius: 0 12px 12px 0; background: #fff4e4; }
+    .promo-card > span { display: block; margin-bottom: 4px; color: #995a05; font-size: 10px; font-weight: 900; letter-spacing: .13em; }
+    .promo-card > strong { display: block; color: #082b4c; font-size: 20px; line-height: 1.15; }
+    .promo-card > p { margin: 6px 0 9px; color: #38566c; font-size: 14px; line-height: 1.35; }
+    .promo-card > a { color: #086978; font-size: 15px; line-height: 1.2; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+    .now-list { margin-top: auto; padding-top: 24px; display: grid; gap: 10px; }
+    .now-item { display: grid; grid-template-columns: 110px 1fr; gap: 11px; align-items: start; padding-top: 10px; border-top: 1px solid #d9e4e9; }
     .now-item > span { font-size: 12px; line-height: 1.25; font-weight: 800; color: #a15b09; }
     .now-item div { display: flex; flex-direction: column; gap: 2px; }
-    .now-item strong { font-size: 13px; line-height: 1.22; color: #173d59; }
-    .now-item small { font-size: 11px; color: #61798a; }
-    .next-panel { border: 2px solid #082b4c; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 12px 30px rgba(8,43,76,.07); }
-    .next-heading { min-height: 72px; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding: 14px 24px; color: white; background: #082b4c; }
+    .now-item strong { font-size: 14px; line-height: 1.25; color: #173d59; }
+    .now-item small { font-size: 12px; color: #61798a; }
+    .next-panel { display: flex; flex-direction: column; border: 2px solid #082b4c; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 12px 30px rgba(8,43,76,.07); }
+    .next-heading { min-height: 84px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 16px 24px; color: white; background: #082b4c; }
     .next-heading > span { font-size: 13px; font-weight: 900; letter-spacing: .18em; color: #f8c877; }
-    .next-heading small { font-size: 15px; font-weight: 700; letter-spacing: .015em; color: #e9f2f7; }
-    .next-list { padding: 10px 22px 6px; }
-    .next-item { display: grid; grid-template-columns: 92px 1fr; gap: 15px; align-items: center; min-height: 88px; padding: 10px 0; border-bottom: 1px solid #dbe6ed; }
+    .next-heading small { font-size: 16px; font-weight: 700; letter-spacing: .015em; color: #e9f2f7; }
+    .next-list { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 12px 22px 8px; }
+    .next-item { flex: 1; min-height: 0; display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px solid #dbe6ed; }
     .next-item:last-child { border-bottom: 0; }
-    .next-time { justify-self: start; max-width: 92px; padding: 7px 9px; border-radius: 9px; background: #eaf5f7; color: #086978; font-size: 12px; line-height: 1.15; font-weight: 900; letter-spacing: .035em; text-align: center; }
+    .next-time { justify-self: start; max-width: 96px; padding: 8px 10px; border-radius: 9px; background: #eaf5f7; color: #086978; font-size: 12px; line-height: 1.15; font-weight: 900; letter-spacing: .035em; text-align: center; }
     .next-copy { display: flex; flex-direction: column; gap: 4px; }
-    .next-copy strong { font-size: 18px; line-height: 1.18; color: #082b4c; }
-    .next-copy span { font-size: 13px; line-height: 1.2; font-weight: 700; color: #647c8c; }
-    .next-list.dense .next-item { min-height: 76px; padding: 8px 0; }
-    .next-list.dense .next-copy strong { font-size: 16px; line-height: 1.16; }
-    .next-list.dense .next-copy span { font-size: 12px; }
-    .footnote { margin: 0 22px 12px; border-radius: 10px; padding: 9px 12px; background: #fff4e4; color: #85500b; font-size: 12px; font-weight: 700; }
-    .sponsor-strip { position: relative; z-index: 1; height: 110px; display: grid; grid-template-columns: 125px 1.1fr 1.15fr .88fr 1.2fr .8fr; gap: 24px; align-items: center; border-top: 1px solid #dce7ef; }
+    .next-copy strong { font-size: 19px; line-height: 1.2; color: #082b4c; }
+    .next-copy span { font-size: 14px; line-height: 1.22; font-weight: 700; color: #647c8c; }
+    .next-list.dense .next-item { padding: 10px 0; }
+    .next-list.dense .next-copy strong { font-size: 17px; line-height: 1.18; }
+    .next-list.dense .next-copy span { font-size: 13px; }
+    .footnote { margin: 0 22px 16px; border-radius: 10px; padding: 10px 13px; background: #fff4e4; color: #85500b; font-size: 13px; font-weight: 700; }
+    .sponsor-strip { position: relative; z-index: 1; height: 160px; display: grid; grid-template-columns: 125px 1.1fr 1.15fr .88fr 1.2fr .8fr; gap: 24px; align-items: center; border-top: 1px solid #dce7ef; }
     .sponsor-strip .thanks { padding-left: 4px; font-size: 10px; line-height: 1.25; letter-spacing: .08em; color: #748997; text-transform: uppercase; }
     .sponsor-strip .thanks strong { font-size: 12px; color: #274b63; }
-    .sponsor-strip img { display: block; max-width: 100%; width: 100%; max-height: 64px; object-fit: contain; }
-    .sponsor-strip img.nuffield { max-height: 70px; }
-    .sponsor-strip img.leverhulme { max-height: 62px; }
-    .sponsor-strip img.silta { max-height: 54px; }
+    .sponsor-strip img { display: block; max-width: 100%; width: 100%; max-height: 72px; object-fit: contain; }
+    .sponsor-strip img.nuffield { max-height: 80px; }
+    .sponsor-strip img.leverhulme { max-height: 70px; }
+    .sponsor-strip img.silta { max-height: 62px; }
     .slide-number { position: absolute; right: 18px; bottom: 12px; font-size: 8px; color: #c5d1d8; }
     @media screen { body { background: #dbe3e8; padding: 20px; } .slide { margin: 0 auto 20px; box-shadow: 0 8px 35px rgba(0,0,0,.18); } }
   </style>
@@ -364,11 +386,14 @@ try {
     console.log(`Generated ${destination}`);
   }
 
-  const pageCount = Number(
-    execFileSync("/usr/bin/pdfinfo", [combinedPdf], { encoding: "utf8" }).match(/^Pages:\s+(\d+)$/m)?.[1]
-  );
+  const pdfInformation = execFileSync("/usr/bin/pdfinfo", [combinedPdf], { encoding: "utf8" });
+  const pageCount = Number(pdfInformation.match(/^Pages:\s+(\d+)$/m)?.[1]);
   if (pageCount !== slides.length) {
     throw new Error(`Expected ${slides.length} PDF pages, but Chrome produced ${pageCount}.`);
+  }
+
+  if (!/^Page size:\s+960 x 720 pts$/m.test(pdfInformation)) {
+    throw new Error("Expected 16:12 PDF pages at 960 × 720 points.");
   }
 } finally {
   rmSync(temporaryDirectory, { recursive: true, force: true });
